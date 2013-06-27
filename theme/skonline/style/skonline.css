@@ -4,11 +4,7 @@ body, div, p, li, input, option, textarea, h1, h2, h3, h4, h5 {
 	font-family: Verdana, Geneva, sans-serif;
 	
 }
-/*TO DISTINGUISH DEVELOPMENT SERVER ONLY
-  DELETE FROM PRODUCTION SERVER CSS*/
-  html.yui3-js-enabled {
-	background-color: #F63;
-}
+
 option {
 	width: 130px;
 	font-size: 8pt;	
