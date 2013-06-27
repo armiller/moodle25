@@ -18,7 +18,7 @@ $CFG->loginhttps = true;
 // ORVSD Performance tweaks
 $CFG->dbsessions = false;
 $CFG->enablestats = false;
-$CFG->themedesignermode = false;
+/*$CFG->themedesignermode = false;*/
 $CFG->loglifetime = 365;
 $CFG->gradehistorylifetime = 365;
 $CFG->updateautocheck = false;
