@@ -388,7 +388,15 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 #page-mod-lesson-view .TableHead {
 	font-weight: bold;
 	color: #FFFFFF;
-	background-color: #B4A0A3;
+	background-color: #445680;
+	border: 2px solid #000000;
+	font-size: 16px;
+	vertical-align: middle;
+}
+#page-mod-lesson-view .TableSubHead {
+	font-weight: bold;
+	color: #000000;
+	background-color: #A3ACBF;
 	border: 2px solid #000000;
 	font-size: 16px;
 	vertical-align: middle;
