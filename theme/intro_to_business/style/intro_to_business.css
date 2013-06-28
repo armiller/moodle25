@@ -1,20 +1,64 @@
 div #region-main #Header {
-	height:66px;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width:100%;
+	z-index: 2;
+	float: none;
+	height: auto;
+	visibility: visible;
+	display: block;
 	
 }
 div #region-main #HeaderLeft {
-	background-image:  url([[pix:theme|HeaderLeft]]);
-	width: 351px;
-	height:66px;
+	background-image: url([[pix:theme|HeaderLeft]]);
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 0px;
+	padding: 0px;
+	height: 119px;
+	width: 356px;
+	position: relative;
+	left: 0px;
+	z-index: 10;
+	top: -94px;
+	visibility: visible;
+	float: left;
 }
 div #region-main #HeaderStretch {	
-	background-image: url([[pix:theme|HeaderStretch]]);	
-	height:66px;
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 95px;
+	width: 100%;
+	z-index: 2;
+	margin: 0px;
+	left: 0px;
+	position: relative;
+	background-image: url([[pix:theme|HeaderBG]]);
+	background-color: #41537E;
+	float: left;
+	padding: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
 }
 div #region-main #HeaderRight {
-	width:10px;
-	background-image: url([[pix:theme|HeaderRight]]);
-	height:66px;
+		background-repeat: no-repeat;
+	background-position: right top;
+	height: 119px;
+	width: 189px;
+	z-index: 4;
+	float: right;
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	visibility: visible;
+	display: none;
 	
 }
 div #region-main .BannerTitle {
