@@ -337,8 +337,13 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 	vertical-align: top;
 	
 }
+table#Courts {
+	border:1px;
+}
 table#Courts td {
 	text-align:center;
+	border: 1px;
+	cell-padding:4px;
 }
 table#Courts td.Major {
 	color: #FFFFFF;
