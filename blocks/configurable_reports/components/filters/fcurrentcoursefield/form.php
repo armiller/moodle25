@@ -28,13 +28,13 @@ if (!defined('MOODLE_INTERNAL')) {
 
 require_once($CFG->libdir.'/formslib.php');
 
-class currentcourses_form extends moodleform {
+class fcurrentcoursefield_form extends moodleform {
     function definition() {
         global $DB, $course, $CFG;
 
         $mform =& $this->_form;
 
-        $mform->addElement('header', '', get_string('currentcourses','block_configurable_reports'), '');
+        $mform->addElement('header', '', get_string('fcurrentcoursefield','block_configurable_reports'), '');
 
 		$this->_customdata['compclass']->add_form_elements($mform,$this); 
 		

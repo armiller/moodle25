@@ -28,26 +28,30 @@ if (!defined('MOODLE_INTERNAL')) {
 
 require_once($CFG->libdir.'/formslib.php');
 
-class currentcourses_form extends moodleform {
+class fsearchuserfieldtwo_form extends moodleform {
     function definition() {
-        global $DB, $course, $CFG;
+        global $DB, $USER, $CFG;
 
         $mform =& $this->_form;
 
-        $mform->addElement('header', '', get_string('currentcourses','block_configurable_reports'), '');
+        $mform->addElement('header', '', get_string('fsearchuserfieldtwo','block_configurable_reports'), '');
 
 		$this->_customdata['compclass']->add_form_elements($mform,$this); 
 		
-		$columns = $DB->get_columns('course');
+		$columns = $DB->get_columns('user');
 		
-		$coursecolumns = array();
+		$usercolumns = array();
 		foreach($columns as $c)
-			$coursecolumns[$c->name] = $c->name;
+			$usercolumns[$c->name] = $c->name;
 			
-		unset($coursecolumns['password']);
-		unset($coursecolumns['sesskey']);
+		if($profile = $DB->get_records('user_info_field'))
+			foreach($profile as $p)
+				$usercolumns['profile_'.$p->shortname] = $p->name;	
 			
-        $mform->addElement('select', 'field', get_string('field','block_configurable_reports'), $coursecolumns);
+		unset($usercolumns['password']);
+		unset($usercolumns['sesskey']);
+			
+        $mform->addElement('select', 'field', get_string('field','block_configurable_reports'), $usercolumns);
 		
        
         // buttons
