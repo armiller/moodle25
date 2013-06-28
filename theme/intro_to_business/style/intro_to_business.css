@@ -137,15 +137,14 @@ div #region-main .BannerTitle {
 }
 
 /*Collapsible panel*/
-div #region-main #section-1 .the_toggle, div #region-main #section-2 .the_toggle, div #region-main #section-3 .the-toggle, div #region-main #section-4 .the_toggle, div #region-main #section-5 .the_toggle,div #region-main #section-6 .the_toggle, div #region-main #section-7 .the_toggle, div #region-main #section-8 .the_toggle, div #region-main #section-9 .the_toggle, div #region-main #section-10 .the_toggle, div #region-main #section-11 .the_toggle, div #region-main #section-12 .the_toggle, div #region-main #section-13 .the_toggle, div #region-main #section-14 .the_toggle, div #region-main #section-15 .the_toggle {
+div #region-main #section-1 .the_toggle, div #region-main #section-2 .the_toggle, div #region-main #section-3 .the_toggle, div #region-main #section-4 .the_toggle, div #region-main #section-5 .the_toggle,div #region-main #section-6 .the_toggle, div #region-main #section-7 .the_toggle, div #region-main #section-8 .the_toggle, div #region-main #section-9 .the_toggle, div #region-main #section-10 .the_toggle, div #region-main #section-11 .the_toggle, div #region-main #section-12 .the_toggle, div #region-main #section-13 .the_toggle, div #region-main #section-14 .the_toggle, div #region-main #section-15 .the_toggle {
 	background-color: #445680;
 	border: 1px outset #32405F;
-	color: #FFF;
+	
 }
-div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 td.cps_centre, div #region-main #sectionhead-3 td.cps_centre, div #region-main #sectionhead-4 td.cps_centre, div #region-main #sectionhead-5 td.cps_centre, div #region-main #sectionhead-6 td.cps_centre, div #region-main #sectionhead-7 td.cps_centre, div #region-main #sectionhead-8 td.cps_centre, div #region-main #sectionhead-9 td.cps_centre, div #region-main #sectionhead-10 td.cps_centre, div #region-main #sectionhead-11 td.cps_centre, div #region-main #sectionhead-12 td.cps_centre, div #region-main #sectionhead-13 td.cps_centre, div #region-main #sectionhead-14 td.cps_centre, div #region-main #sectionhead-15 td.cps_centre  {
+div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_toggle h3, div #region-main #section-3 .the_toggle h3, div #region-main #section-4 .the_toggle h3, div #region-main #section-5 .the_toggl h3e,div #region-main #section-6 .the_toggle h3, div #region-main #section-7 .the_toggle h3, div #region-main #section-8 .the_toggle h3, div #region-main #section-9 .the_toggle h3, div #region-main #section-10 .the_toggle h3, div #region-main #section-11 .the_toggle h3, div #region-main #section-12 .the_toggle h3, div #region-main #section-13 .the_toggle h3, div #region-main #section-14 .the_toggle h3, div #region-main #section-15 .the_toggle h3 {
 	color: #FFF;
-	background-color: #9BBCDD;
-	border: none;
+	
 	font-family: Verdana, Geneva, sans-serif;
 }
 .biggertext { font-size: 14px; background: transparent; 
