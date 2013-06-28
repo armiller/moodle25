@@ -142,7 +142,7 @@ div #region-main #section-1 .the_toggle, div #region-main #section-2 .the_toggle
 	border: 1px outset #32405F;
 	
 }
-div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_toggle h3, div #region-main #section-3 .the_toggle h3, div #region-main #section-4 .the_toggle h3, div #region-main #section-5 .the_toggl h3,div #region-main #section-6 .the_toggle h3, div #region-main #section-7 .the_toggle h3, div #region-main #section-8 .the_toggle h3, div #region-main #section-9 .the_toggle h3, div #region-main #section-10 .the_toggle h3, div #region-main #section-11 .the_toggle h3, div #region-main #section-12 .the_toggle h3, div #region-main #section-13 .the_toggle h3, div #region-main #section-14 .the_toggle h3, div #region-main #section-15 .the_toggle h3 {
+div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_toggle h3, div #region-main #section-3 .the_toggle h3, div #region-main #section-4 .the_toggle h3, div #region-main #section-5 .the_toggle h3,div #region-main #section-6 .the_toggle h3, div #region-main #section-7 .the_toggle h3, div #region-main #section-8 .the_toggle h3, div #region-main #section-9 .the_toggle h3, div #region-main #section-10 .the_toggle h3, div #region-main #section-11 .the_toggle h3, div #region-main #section-12 .the_toggle h3, div #region-main #section-13 .the_toggle h3, div #region-main #section-14 .the_toggle h3, div #region-main #section-15 .the_toggle h3 {
 	color: #FFF;
 	
 	font-family: Verdana, Geneva, sans-serif;
@@ -336,4 +336,11 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 	border: 1px solid #000000;
 	vertical-align: top;
 	
+}
+table#Courts td {
+	text-align:center;
+}
+table#Courts td.Major {
+	color: #FFFFFF;
+	font-weight:bold;
 }
