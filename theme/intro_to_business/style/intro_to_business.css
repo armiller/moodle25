@@ -137,10 +137,10 @@ div #region-main .BannerTitle {
 }
 
 /*Collapsible panel*/
-div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10, div #region-main #sectionatag-11, div #region-main #sectionatag-12, div #region-main #sectionatag-13, div #region-main #sectionatag-14, div #region-main #sectionatag-15 {
-	background-color: #B0CAE3;
-	border: 1px outset #CBDCED;
-	color: #333;
+div #region-main #section-1 .the_toggle, div #region-main #section-2 .the_toggle, div #region-main #section-3 .the-toggle, div #region-main #section-4 .the_toggle, div #region-main #section-5 .the_toggle,div #region-main #section-6 .the_toggle, div #region-main #section-7 .the_toggle, div #region-main #section-8 .the_toggle, div #region-main #section-9 .the_toggle, div #region-main #section-10 .the_toggle, div #region-main #section-11 .the_toggle, div #region-main #section-12 .the_toggle, div #region-main #section-13 .the_toggle, div #region-main #section-14 .the_toggle, div #region-main #section-15 .the_toggle {
+	background-color: #445680;
+	border: 1px outset #32405F;
+	color: #FFF;
 }
 div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 td.cps_centre, div #region-main #sectionhead-3 td.cps_centre, div #region-main #sectionhead-4 td.cps_centre, div #region-main #sectionhead-5 td.cps_centre, div #region-main #sectionhead-6 td.cps_centre, div #region-main #sectionhead-7 td.cps_centre, div #region-main #sectionhead-8 td.cps_centre, div #region-main #sectionhead-9 td.cps_centre, div #region-main #sectionhead-10 td.cps_centre, div #region-main #sectionhead-11 td.cps_centre, div #region-main #sectionhead-12 td.cps_centre, div #region-main #sectionhead-13 td.cps_centre, div #region-main #sectionhead-14 td.cps_centre, div #region-main #sectionhead-15 td.cps_centre  {
 	color: #FFF;
@@ -161,19 +161,6 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 	}
 .nobullet { list-style: none; /* turns off bullets */ 
 	}
-#ShowHide {
-	display: none;
-}
-#Answer {
-	background-color: #FFF7F8;
-	-moz-box-shadow: 3px 3px 4px #000;
-	-webkit-box-shadow: 3px 3px 4px #000;
-	box-shadow: 3px 3px 4px #000;	
-   -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000')";/* Box Shadow For IE 8 */   
-	filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#000000');  /* Box Shadow For IE 5.5 - 7 */
-	padding: 10px;
-	border: 2px outset #254A70;
-}
 
 .pullquote-left { 
 	float: left; 
@@ -239,23 +226,6 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 #region-main .GoalsAndObjectives + ol, #region-main .GoalsAndObjectives + ul {
 	margin-top: 0px;
 }
-#MainContent {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-color: #FFF7F8;
-	line-height: 1.4em;
-}
-
-#LegalQs {
-	padding: 10px;
-	background-color: #DDE6F5;
-	border: 2px outset #254A70;
-	display: block;
-	float: right;
-	width: 50%;
-	margin-left: 10px;
-	clear:right;
-}
 
 .Credit {
 	font-size: 12px;
@@ -275,7 +245,7 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 }
 
 
-#region-main.Assessment {
+#region-main .Assessment {
 	font-family: "Century Gothic", Verdana, Arial;
 	color: #34689A;
 	font-size: 18px;
@@ -294,69 +264,7 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 	margin: 1px 200px 1px 1px;
 	width: auto;
 }
-#region-main .PopUpLayer {
-	background-color: #34689A;
-	padding: 5px;
-	visibility: hidden;
-	height: auto;
-	width: 300px;
-	border: 2px outset #254A70;
-	z-index: 20;
-	display: inline;
-	float: left;
-	left: 33%;
-	text-align: left;
-	position: absolute;
-	color: #FFFFFF;
-}
-#region-main #CloseWindow {
-	background-color: #4B413F;
-	margin-right: -1px;
-	z-index: 100;
-}
-#region-main #CloseWindow a {
-	color: #FFFCFF;
-}
-#region-main .InitialCaps {
-	font-size: 36px;
-	font-weight: bold;
-	color: #39689C;
-}
 
-
-#InfoToKnow {
-	margin: 10px 30px 10px 0px;
-	padding: 10px;
-	border-top-width: 3px;
-	border-bottom-width: 5px;
-	border-top-style: solid;
-	border-bottom-style: solid;
-	border-top-color: #A68C8E;
-	border-right-color: #A68C8E;
-	border-bottom-color: #A68C8E;
-	border-left-color: #A68C8E;
-	background-color: #4A423F;
-	color: #FFF7F8;
-	float: left;
-	display: block;
-	width: 50%;
-}
-
-#InfoToKnow p {
-	font-size: 13px;
-	line-height: 1.5em;
-	font-weight: normal;
-	color: #FFF7F8;
-}
-
-#InfoToKnow a {
-	color: #9BBCDD;
-	font-weight: bold;
-}
-#InfoToKnow h2 {
-	color: #9BBCDD;
-	font-size: 18px;
-}
 #page-mod-lesson-view .branchbuttoncontainer {
 	clear:both;
 
@@ -391,19 +299,6 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 .HundredPercent {
 	width: 100%;
 }
-#LegalQs h3 {
-	font-size: 18px;
-	font-weight: bold;
-	font-family: "Century Gothic", Verdana, Arial;
-	color: #4A423F;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-}
-
-
-
 
 #region-main .Highlight {
 	margin-right: 10%;
@@ -411,14 +306,6 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 	border: 1px none;
 }
 
-
-
-#region-main .PopUpLayer a {
-	color:#FFFFFF;
-}
-#InfoToKnow strong {
-	color: #9BBCDD;
-}
 
 #page-mod-lesson-view table {
 	padding: 2px;
