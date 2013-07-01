@@ -315,7 +315,7 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 	margin-left: 10%;
 	background-color: #FFF7F8;
 }
-#page-mod-lesson-view .TableHead {
+.TableHead {
 	font-weight: bold;
 	color: #FFFFFF;
 	background-color: #445680;
@@ -323,7 +323,7 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 	font-size: 16px;
 	vertical-align: middle;
 }
-#page-mod-lesson-view .TableSubHead {
+.TableSubHead {
 	font-weight: bold;
 	color: #000000;
 	background-color: #A3ACBF;
