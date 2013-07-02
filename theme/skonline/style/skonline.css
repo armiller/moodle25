@@ -51,6 +51,9 @@ option {
 #page-site-index .controls .addtoall {
 	margin-right:10px;
 }
+#page-site-index div.courses div.info {
+	width:90%;
+}
 
 #page-login-index span.error {
 	color:#F00;

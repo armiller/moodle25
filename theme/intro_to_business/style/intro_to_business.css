@@ -10,6 +10,7 @@ div #region-main #Header {
 	height: auto;
 	visibility: visible;
 	display: block;
+	height:119px;
 	
 }
 div #region-main #HeaderLeft {
@@ -30,7 +31,7 @@ div #region-main #HeaderLeft {
 div #region-main #HeaderStretch {	
 	background-repeat: no-repeat;
 	background-position: right top;
-	height: 95px;
+	height: 119px;
 	width: 100%;
 	z-index: 2;
 	margin: 0px;
@@ -105,20 +106,19 @@ div #region-main .BannerTitle {
 
 	
 #region-main h2 {
-	font-family: "Century Gothic", Verdana, Arial;
-	/*font-size: 22px;*/
-	font-style: italic;
-	font-weight: bold;
-	color: #39689C;
+	font-family: verdana, san-serif, serif;
+	font-size: 16px; 
+	color: black; 
+	background: none transparent; 
 	margin-bottom: 0;
 	margin-top: .5em;
 	display: block;
 }
 
 #region-main h3 {
-	/*font-size: 18px;*/
+	
 	font-weight: bold;
-	font-family: "Century Gothic", Verdana, Arial;
+	font-family: verdana, san-serif, serif;
 	margin: .5em 0 0;
 	color: #4b4340;
 	display: block;
@@ -196,21 +196,21 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 } 
 
 #region-main #Goals, #region-main div.Goals {
-	background-color: #DCD3D4;
+	background-color: #E3E0DF;
 	text-align: left;
 	padding: 10px 7px;
 	margin-bottom: 10px;
 	margin-top: 10px;
-	border: 5px outset #B4A0A3;
-		-moz-border-radius-topleft: 4px;
+	border: 5px outset #4B4340;
+	
+	-moz-border-radius-topleft: 4px;
 	-moz-border-radius-bottomleft: 4px;
 	border-top-left-radius: 4px;
 	border-bottom-left-radius: 4px;
 	-moz-border-radius-topright: 4px;
 	-moz-border-radius-bottomright: 4px;
 	border-top-right-radius: 4px;
-	border-bottom-right-radius: 4px;
-	/*margin-top: 20px;
+	border-bottom-right-radius: 4px;	/*margin-top: 20px;
 	margin-right: 0px;
 	margin-left: 0px;*/
 	
@@ -303,6 +303,8 @@ div #region-main #section-1 .the_toggle h3, div #region-main #section-2 .the_tog
 	margin-right: 10%;
 	margin-left: 10%;
 	border: 1px none;
+	background-color: #445680;
+	color:#FFF;
 }
 
 
