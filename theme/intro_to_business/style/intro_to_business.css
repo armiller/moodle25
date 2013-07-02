@@ -82,16 +82,16 @@ div #region-main h1,  div #region-main #Announcements, div #region-main .announc
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
 	padding-top: 4px;
-	padding-right: 4px;
+	padding-right: 20px;
 	padding-bottom: 4px;
-	padding-left: 4px;
+	padding-left: 20px;
 }
 
 div #region-main #Announcements h1, div #region-main div.announcement h1 {
 	border:none;
 	background-image: none;
 	border:none;
-	padding: 4px 20px 4px 0px;
+	
 }
 #Announcements h1:first-child, .announcement h1:first-child {
 	padding: 4px 20px 4px 40px;
