@@ -54,6 +54,13 @@ option {
 #page-site-index div.courses div.info {
 	width:90%;
 }
+.coursebox .info {
+	width:90%;
+}
+.coursebox > .info > .name a {
+	background-image: none;
+	padding-left: 0px;
+}
 
 #page-login-index span.error {
 	color:#F00;
