@@ -1,0 +1,1 @@
+This theme is fluid 2 columns with a clean design and exciting based on the structure of the Fusion theme originally provided in Moodle core.
