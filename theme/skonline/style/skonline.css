@@ -54,7 +54,7 @@ option {
 #page-site-index div.courses div.info {
 	width:90%;
 }
-.coursebox .info {
+#page-course-index-category .coursebox .info {
 	width:90%;
 }
 .coursebox > .info > .name a {
