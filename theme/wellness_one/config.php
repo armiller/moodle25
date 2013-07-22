@@ -12,7 +12,7 @@ $THEME->sheets = array('base', 'skonline', 'browser', 'ImportedFromMoodle1_9', '
 /// stylesheet files you want included in this theme, and in what order
 ////////////////////////////////////////////////////////////////////////////////
 
-$THEME->parents = array('skonline', 'base');  // TODO: new themes can not be based on standardold, instead use 'base' as the base
+$THEME->parents = array('standard', 'base');  // TODO: new themes can not be based on standardold, instead use 'base' as the base
 /// This variable can be set to the name of a parent theme
 /// which you want to have included before the current theme.
 /// This can make it easy to make modifications to another
