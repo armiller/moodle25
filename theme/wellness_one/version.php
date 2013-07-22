@@ -23,35 +23,16 @@
  * For full information about creating Moodle themes, see:
  * http://docs.moodle.org/dev/Themes_2.0
  *
- * @package   theme_clean
- * @copyright 2013 Moodle, moodle.org
- * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
+ * @package    theme_clean
+ * @copyright  2013 Moodle, moodle.org
+ * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$THEME->name = 'wellness_one';
+defined('MOODLE_INTERNAL') || die;
 
-/////////////////////////////////
-// The only thing you need to change in this file when copying it to
-// create a new theme is the name above. You also need to change the name
-// in version.php and lang/en/theme_clean.php as well.
-//////////////////////////////////
-//
-$THEME->doctype = 'html5';
-$THEME->parents = array('bootstrapbase');
-$THEME->sheets = array('custom');
-$THEME->supportscssoptimisation = false;
-$THEME->yuicssmodules = array();
-
-$THEME->editor_sheets = array();
-
-$THEME->plugins_exclude_sheets = array(
-    'block' => array(
-        'html',
-    ),
-    'gradereport' => array(
-        'grader',
-    ),
+$plugin->version   = 2013072200;
+$plugin->requires  = 2013050100;
+$plugin->component = 'theme_wellness_one';
+$plugin->dependencies = array(
+    'theme_bootstrapbase'  => 2013050100,
 );
-
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'clean_process_css';

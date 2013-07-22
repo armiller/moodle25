@@ -1,5 +1,4 @@
 <?php
-
 // This file is part of Moodle - http://moodle.org/
 //
 // Moodle is free software: you can redistribute it and/or modify
@@ -16,14 +15,54 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Strings for component 'theme_wellness_one', language 'en', branch 'MOODLE_20_STABLE'
+ * Strings for component 'theme_clean', language 'en'
  *
- * @package   theme_wellness_one
- * @copyright 1999 onwards Martin Dougiamas  {@link http://moodle.com}
+ * @package   theme_clean
+ * @copyright 2013 Moodle, moodle.org
  * @license   http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-$string['pluginname'] = 'wellness_one';
+$string['choosereadme'] = '
+<div class="clearfix">
+<div class="well">
+<h2>Wellness One</h2>
+<p><img class=img-polaroid src="clean/pix/screenshot.jpg" /></p>
+</div>
+<div class="well">
+<h3>About</h3>
+<p>Wellness One is a modified Moodle bootstrap theme which inherits styles and renderers from its parent theme.</p>
+<h3>Parents</h3>
+<p>This theme is based upon the Bootstrap theme, which was created for Moodle 2.5, with the help of:<br>
+Stuart Lamour, Mark Aberdour, Paul Hibbitts, Mary Evans.</p>
+<h3>Theme Credits</h3>
+<p>Authors: Bas Brands, David Scotson, Mary Evans<br>
+Contact: bas@sonsbeekmedia.nl<br>
+Website: <a href="http://www.basbrands.nl">www.basbrands.nl</a>
+</p>
+<h3>Report a bug:</h3>
+<p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p>
+<h3>More information</h3>
+<p><a href="clean/README.txt">How to copy and customise this theme.</a></p>
+</div></div>';
+
+$string['configtitle'] = 'Clean';
+
+$string['customcss'] = 'Custom CSS';
+$string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
+
+$string['footnote'] = 'Footnote';
+$string['footnotedesc'] = 'Whatever you add to this textarea will be displayed in the footer throughout your Moodle site.';
+
+$string['invert'] = 'Invert navbar';
+$string['invertdesc'] = 'Swaps text and background for the navbar at the top of the page between black and white.';
+
+$string['logo'] = 'Logo';
+$string['logodesc'] = 'Please upload your custom logo here if you want to add it to the header.<br>
+If the height of your logo is more than 75px add the following CSS rule to the Custom CSS box below.<br>
+a.logo {height: 100px;} or whatever height in pixels the logo is.';
+
+$string['pluginname'] = 'Clean';
+
 $string['region-side-post'] = 'Right';
 $string['region-side-pre'] = 'Left';
-$string['choosereadme'] = '<div class="clearfix"><div class="theme_screenshot"><h2>SKOnline</h2><img src="../../../sophecon/pix/screenshot.jpg" /><h3>Theme Discussion Forum:</h3><p><a href="http://moodle.org/mod/forum/view.php?id=46">http://moodle.org/mod/forum/view.php?id=46</a></p><h3>Theme Credits</h3><p><a href="http://docs.moodle.org/en/Theme_credits">http://docs.moodle.org/en/Theme_credits</a></p><h3>Theme Documentation:</h3><p><a href="http://docs.moodle.org/en/Themes">http://docs.moodle.org/en/Themes</a></p><h3>Report a bug:</h3><p><a href="http://tracker.moodle.org">http://tracker.moodle.org</a></p></div><div class="theme_description"><h2>About</h2><p>SKOnline is a fluid-width, three-column Moodle 2.0 theme with rounded corners. <h2>Tweaks</h2><p>This theme is built upon the Base theme inside the Moodle core. If you want to modify this theme, we recommend that you first duplicate it, then rename it before making your changes. This will prevent your customized theme from being overwritten by future Moodle upgrades, and you\'ll still have the original files if you make a mess. More information on modifying themes can be found in the <a href="http://docs.moodle.org/en/Theme">MoodleDocs</a>.</p><h2>Credits</h2><p>This theme was originally designed for Moodle 1.9 by Patrick Malley. It was then coded for 2.0 and is maintained by Sam Hemelryk at Moodle HQ. He can be contacted at sam@moodle.com.</p><h2>License</h2><p>This, and all other themes included in the Moodle core, are licensed under the <a href="http://www.gnu.org/licenses/gpl.html">GNU General Public License</a>.</div></div>';
+
