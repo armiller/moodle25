@@ -31,7 +31,7 @@ defined('MOODLE_INTERNAL') || die;
 	$ADMIN->add('themes', new admin_category('theme_essential', 'Essential'));
 
 	// "geneicsettings" settingpage
-	$temp = new admin_settingpage('theme_essential_generic', 'General Settings');
+	$temp = new admin_settingpage('theme_essential_generic',  get_string('geneicsettings', 'theme_essential'));
 	
 	// Default Site icon setting.
     $name = 'theme_essential/siteicon';
@@ -46,6 +46,40 @@ defined('MOODLE_INTERNAL') || die;
     $title = get_string('logo', 'theme_essential');
     $description = get_string('logodesc', 'theme_essential');
     $setting = new admin_setting_configstoredfile($name, $title, $description, 'logo');
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    // User picture in header setting.
+    $name = 'theme_essential/headerprofilepic';
+    $title = get_string('headerprofilepic', 'theme_essential');
+    $description = get_string('headerprofilepicdesc', 'theme_essential');
+    $default = true;
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default, true, false);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    // Custom or standard layout.
+    $name = 'theme_essential/layout';
+    $title = get_string('layout', 'theme_essential');
+    $description = get_string('layoutdesc', 'theme_essential');
+    $default = false;
+    $setting = new admin_setting_configcheckbox($name, $title, $description, $default, true, false);
+    $setting->set_updatedcallback('theme_reset_all_caches');
+    $temp->add($setting);
+    
+    // Navbar Seperator.
+    $name = 'theme_essential/navbarsep';
+    $title = get_string('navbarsep' , 'theme_essential');
+    $description = get_string('navbarsepdesc', 'theme_essential');
+    $nav_thinbracket = get_string('nav_thinbracket', 'theme_essential');
+    $nav_doublebracket = get_string('nav_doublebracket', 'theme_essential');
+    $nav_thickbracket = get_string('nav_thickbracket', 'theme_essential');
+    $nav_slash = get_string('nav_slash', 'theme_essential');
+    $nav_pipe = get_string('nav_pipe', 'theme_essential');
+    $dontdisplay = get_string('dontdisplay', 'theme_essential');
+    $default = '/';
+    $choices = array('/'=>$nav_slash, '\f105'=>$nav_thinbracket, '\f101'=>$nav_doublebracket, '\f054'=>$nav_thickbracket, '|'=>$nav_pipe);
+    $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
     $setting->set_updatedcallback('theme_reset_all_caches');
     $temp->add($setting);
 

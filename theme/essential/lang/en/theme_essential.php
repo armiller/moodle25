@@ -47,6 +47,7 @@ Website: <a href="http://www.moodleman.net">www.moodleman.net</a>
 </div></div>';
 
 /* General */
+$string['geneicsettings'] = 'General Settings';
 $string['customcss'] = 'Custom CSS';
 $string['customcssdesc'] = 'Whatever CSS rules you add to this textarea will be reflected in every page, making for easier customization of this theme.';
 $string['footnote'] = 'Footnote';
@@ -67,6 +68,20 @@ $string['contactinfo'] = 'Contact Information';
 $string['contactinfodesc'] = 'Enter your contact information';
 $string['siteicon'] = 'Site Icon';
 $string['siteicondesc'] = 'Do not have a logo? Enter the name of the icon you wish to use. List is <a href="http://fortawesome.github.io/Font-Awesome/cheatsheet/" target="_new">here</a>. Just enter what is after the "icon-". ';
+$string['yourprofile'] = 'You';
+$string['headerprofilepic'] = 'Display user\'s picture';
+$string['headerprofilepicdesc'] = 'If checked, displays the user\'s profile picture in the header of the page.';
+$string['layout'] = 'Use a standard course layout';
+$string['layoutdesc'] = 'This theme is designed to put both block columns on the side. If you prefer the standard Moodle course layout you can check this box and be returned to the boring old three column layout.';
+
+/* Navbar Seperator */
+$string['navbarsep'] = 'Navbar Seperator';
+$string['navbarsepdesc'] = 'Here you can change the type of seperator displayed in the navbar/breadcrumb';
+$string['nav_thinbracket'] = 'Thin bracket';
+$string['nav_doublebracket'] = 'Double thin bracket';
+$string['nav_thickbracket'] = 'Thick Bracket';
+$string['nav_slash'] = 'Forward slash';
+$string['nav_pipe'] = 'Verticle line';
 
 /* Regions */
 $string['region-side-post'] = 'Right';
@@ -85,6 +100,7 @@ $string['hideonphone'] = 'Slideshow on Mobiles';
 $string['hideonphonedesc'] = 'Choose if you wish to have the slideshow shown on mobiles or not';
 $string['display'] = 'Display';
 $string['dontdisplay'] = 'Do not Display';
+$string['readmore'] = 'Read More';
 
 $string['slideshowTitle'] = 'Slideshow';
 $string['slide1'] = 'Slide One: Title';
@@ -169,6 +185,7 @@ $string['marketing3buttonurldesc'] = 'URL the button will point to.';
 $string['socialheading'] = 'Social Networking';
 $string['socialheadingsub'] = 'Engage your users with Social Networking';
 $string['socialdesc'] = 'Provide direct links to the core social networks that promote your brand. These will appear in the header of every page.';
+$string['socialnetworks'] = 'Social Networks';
 $string['facebook'] = 'Facebook URL';
 $string['facebookdesc'] = 'Enter the URL of your Facebook page. (i.e http://www.facebook.com/mycollege)';
 

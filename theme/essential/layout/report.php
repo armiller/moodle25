@@ -42,7 +42,6 @@ $showsidepost = ($hassidepost && !$PAGE->blocks->region_completely_docked('side-
 $showfooterleft = ($hasfooterleft && !$PAGE->blocks->region_completely_docked('footer-left', $OUTPUT));
 $showfootermiddle = ($hasfootermiddle && !$PAGE->blocks->region_completely_docked('footer-middle', $OUTPUT));
 $showfooterright = ($hasfooterright && !$PAGE->blocks->region_completely_docked('footer-right', $OUTPUT));
-$hasboringlayout = (empty($PAGE->theme->settings->layout)) ? false : $PAGE->theme->settings->layout;
 
 // If there can be a sidepost region on this page and we are editing, always
 // show it so blocks can be dragged into it.
@@ -134,12 +133,31 @@ if ($hasheader) {
     </nav>
 </header>
 
-	<?php if ($hasboringlayout) { ?>
-		<?php require('standard.php'); ?>
-	<?php } else { ?>
-		<?php require('essential.php'); ?>
-	<?php } ?>
-     
+<div id="page" class="container-fluid">
+<div id="page-content" class="row-fluid">
+        <div id="<?php echo $regionbsid ?>" class="span12">
+            <div class="row-fluid">
+                <section id="region-main" class="span9 pull-right">
+                    <?php
+                    if ($hasnavbar) { ?>
+            		<nav class="breadcrumb-button"><?php echo $PAGE->button; ?></nav>
+            		<?php echo $OUTPUT->navbar(); ?>
+            		<?php }
+                    echo $OUTPUT->course_content_header(); ?>
+                    <h2 class="pagetitle"><span><?php echo $PAGE->title ?></span></h2>
+                    <?php echo $OUTPUT->main_content();
+                    echo $OUTPUT->course_content_footer();
+                    ?>
+                </section>
+                <div id="region-pre" class="block-region">
+        			<div class="region-content">
+        				<?php echo $OUTPUT->blocks('side-pre', 'span3 desktop-first-column'); ?>
+        			</div>
+        		</div>
+            </div>
+        </div>
+    </div>
+</div>  
 
 <footer id="page-footer" class="container-fluid">
             <?php require('footer.php'); ?>
