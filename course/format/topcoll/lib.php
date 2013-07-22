@@ -1,4 +1,18 @@
 <?php
+// This file is part of Moodle - http://moodle.org/
+//
+// Moodle is free software: you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation, either version 3 of the License, or
+// (at your option) any later version.
+//
+// Moodle is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// You should have received a copy of the GNU General Public License
+// along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
  * Collapsed Topics Information
@@ -10,25 +24,12 @@
  *
  * @package    course/format
  * @subpackage topcoll
- * @version    See the value of '$plugin->version' in version.php.
+ * @version    See the value of '$plugin->version' in below.
  * @copyright  &copy; 2012-onwards G J Barnard in respect to modifications of standard topics format.
  * @author     G J Barnard - gjbarnard at gmail dot com and {@link http://moodle.org/user/profile.php?id=442195}
- * @author     Based on code originally written by Dan Poltawski.
  * @link       http://docs.moodle.org/en/Collapsed_Topics_course_format
  * @license    http://www.gnu.org/copyleft/gpl.html GNU Public License
  *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
-
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
-
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 require_once($CFG->dirroot . '/course/format/lib.php'); // For format_base.
 
@@ -64,6 +65,19 @@ class format_topcoll extends format_base {
      */
     public function get_section_name($section) {
         $course = $this->get_course();
+        // Don't add additional text as called in creating the navigation.
+        return $this->get_topcoll_section_name($course, $section, false);
+    }
+
+    /**
+     * Gets the name for the provided course, section and state if need to add addional text.
+     *
+     * @param stdClass $course The course entry from DB
+     * @param int|stdClass $section Section object from database or just field section.section
+     * @param boolean $additional State to add additiional text yes = true or no = false.
+     * @return string The section name.
+     */
+    public function get_topcoll_section_name($course, $section, $additional) {
         $thesection = $this->get_section($section);
         if (is_null($thesection)) {
             $thesection = new stdClass;
@@ -81,6 +95,14 @@ class format_topcoll extends format_base {
         // We can't add a node without any text.
         if ((string) $thesection->name !== '') {
             $o .= format_string($thesection->name, true, array('context' => $coursecontext));
+            if (($tcsettings['layoutstructure'] == 2) || ($tcsettings['layoutstructure'] == 3) ||
+                ($tcsettings['layoutstructure'] == 5)) {
+                $o .= ' ';
+                if ($additional == true) { // br tags break backups!
+                    $o .= html_writer::empty_tag('br');
+                }
+                $o .= $this->get_section_dates($section, $course, $tcsettings);
+            }
         } else if ($thesection->section == 0) {
             $o = get_string('section0name', 'format_topcoll');
         } else {
@@ -91,13 +113,14 @@ class format_topcoll extends format_base {
             }
         }
 
-        /* 
+        /*
          * Now done here so that the drag and drop titles will be the correct strings as swapped in format.js.
          * But only if we are using toggles which will be if all sections are on one page or we are editing the main page
-         * when in one section per page which is coded in 'renderer.php/print_multiple_section_page()' when it calls 'section_header()'
-         * as that gets called from 'format.php' when there is no entry for '$displaysetting' - confused? I was, took ages to figure.
+         * when in one section per page which is coded in 'renderer.php/print_multiple_section_page()' when it calls
+         * 'section_header()' as that gets called from 'format.php' when there is no entry for '$displaysetting' - confused?
+         * I was, took ages to figure.
          */
-        if (($course->coursedisplay == COURSE_DISPLAY_SINGLEPAGE) && ($thesection->section != 0)) {
+        if (($additional == true) && ($thesection->section != 0)) {
             switch ($tcsettings['layoutelement']) {
                 case 1:
                 case 2:
@@ -112,7 +135,7 @@ class format_topcoll extends format_base {
     }
 
     public function get_section_dates($section, $course, $tcsettings) {
-        $dateformat = ' ' . get_string('strftimedateshort');
+        $dateformat = get_string('strftimedateshort');
         $o = '';
         if ($tcsettings['layoutstructure'] == 5) {
             $day = $this->format_topcoll_get_section_day($section, $course);
@@ -202,17 +225,25 @@ class format_topcoll extends format_base {
      * @return array This will be passed in ajax respose
      */
     public function ajax_section_move() {
-        global $PAGE;
         $titles = array();
+        $current = -1;  // MDL-33546.
+        $weekformat = false;
+        $tcsettings = $this->get_settings();
+        if (($tcsettings['layoutstructure'] == 2) || ($tcsettings['layoutstructure'] == 3) ||
+            ($tcsettings['layoutstructure'] == 5)) {
+            $weekformat = true;
+        }
         $course = $this->get_course();
         $modinfo = get_fast_modinfo($course);
-        $renderer = $this->get_renderer($PAGE);
-        if ($renderer && ($sections = $modinfo->get_section_info_all())) {
+        if ($sections = $modinfo->get_section_info_all()) {
             foreach ($sections as $number => $section) {
-                $titles[$number] = $renderer->section_title($section, $course);
+                $titles[$number] = $this->get_topcoll_section_name($course, $section, true);
+                if (($weekformat == true) && ($this->is_section_current($section))) {
+                    $current = $number;  // Only set if a week based course to keep the current week in the same place.
+                }
             }
         }
-        return array('sectiontitles' => $titles, 'action' => 'move');
+        return array('sectiontitles' => $titles, 'current' => $current, 'action' => 'move');
     }
 
     /**
@@ -275,6 +306,10 @@ class format_topcoll extends format_base {
                 ),
                 'togglealignment' => array(
                     'default' => get_config('format_topcoll', 'defaulttogglealignment'),
+                    'type' => PARAM_INT,
+                ),
+                'toggleiconposition' => array(
+                    'default' => get_config('format_topcoll', 'defaulttoggleiconposition'),
                     'type' => PARAM_INT,
                 ),
                 'toggleiconset' => array(
@@ -390,6 +425,16 @@ class format_topcoll extends format_base {
                               2 => new lang_string('columnhorizontal', 'format_topcoll')) // Default.
                     )
                 );
+                $courseformatoptionsedit['toggleiconposition'] = array(
+                    'label' => new lang_string('settoggleiconposition', 'format_topcoll'),
+                    'help' => 'settoggleiconposition',
+                    'help_component' => 'format_topcoll',
+                    'element_type' => 'select',
+                    'element_attributes' => array(
+                        array(1 => new lang_string('left', 'format_topcoll'),   // Left.
+                              2 => new lang_string('right', 'format_topcoll'))  // Right.
+                    )
+                );
             } else {
                 $courseformatoptionsedit['layoutelement'] =
                     array('label' => new lang_string('setlayoutelements', 'format_topcoll'), 'element_type' => 'hidden');
@@ -399,6 +444,8 @@ class format_topcoll extends format_base {
                     array('label' => new lang_string('setlayoutcolumns', 'format_topcoll'), 'element_type' => 'hidden');
                 $courseformatoptionsedit['layoutcolumnorientation'] =
                     array('label' => new lang_string('setlayoutcolumnorientation', 'format_topcoll'), 'element_type' => 'hidden');
+                $courseformatoptionsedit['toggleiconposition'] =
+                    array('label' => new lang_string('settoggleiconposition', 'format_topcoll'), 'element_type' => 'hidden');
             }
 
             if (has_capability('format/topcoll:changetogglealignment', $coursecontext)) {
@@ -499,17 +546,18 @@ class format_topcoll extends format_base {
      */
     public function create_edit_form_elements(&$mform, $forsection = false) {
         global $CFG;
-        MoodleQuickForm::registerElementType('tccolourpopup', "$CFG->dirroot/course/format/topcoll/js/tc_colourpopup.php", 'MoodleQuickForm_tccolourpopup');
+        MoodleQuickForm::registerElementType('tccolourpopup', "$CFG->dirroot/course/format/topcoll/js/tc_colourpopup.php",
+                                             'MoodleQuickForm_tccolourpopup');
 
         $elements = parent::create_edit_form_elements($mform, $forsection);
         if ($forsection == false) {
             global $COURSE, $USER;
             /*
-             * Increase the number of sections combo box values if the user has increased the number of sections
-             * using the icon on the course page beyond course 'maxsections' or course 'maxsections' has been
-             * reduced below the number of sections already set for the course on the site administration course
-             * defaults page.  This is so that the number of sections is not reduced leaving unintended orphaned
-             * activities / resources.
+             Increase the number of sections combo box values if the user has increased the number of sections
+             using the icon on the course page beyond course 'maxsections' or course 'maxsections' has been
+             reduced below the number of sections already set for the course on the site administration course
+             defaults page.  This is so that the number of sections is not reduced leaving unintended orphaned
+             activities / resources.
              */
             $maxsections = get_config('moodlecourse', 'maxsections');
             $numsections = $mform->getElementValue('numsections');
@@ -622,7 +670,7 @@ class format_topcoll extends format_base {
         }
         if (isset($data->resetallcolour) == true) {
             $resetallcolour = true;
-            unset($data->resetalllayout);
+            unset($data->resetallcolour);
         }
         if (isset($data->resetalltogglealignment) == true) {
             $resetalltogglealignment = true;
@@ -647,7 +695,7 @@ class format_topcoll extends format_base {
                          * we fill it with the maximum section number from the DB */
                         $maxsection = $DB->get_field_sql('SELECT max(section) from {course_sections} WHERE course = ?', array($this->courseid));
                         if ($maxsection) {
-                            // If there are no sections, or just default 0-section, 'numsections' will be set to default
+                            // If there are no sections, or just default 0-section, 'numsections' will be set to default.
                             $data['numsections'] = $maxsection;
                         }
                     }
@@ -702,18 +750,22 @@ class format_topcoll extends format_base {
     /**
      * Return the start and end date of the passed section.
      *
-     * @param stdClass $section The course_section entry from the DB.
+     * @param int|stdClass $section The course_section entry from the DB.
      * @param stdClass $course The course entry from DB.
      * @return stdClass property start for startdate, property end for enddate.
      */
     private function format_topcoll_get_section_dates($section, $course) {
         $oneweekseconds = 604800;
-        // Hack alert. We add 2 hours to avoid possible DST problems. (e.g. we go into daylight
-        // savings and the date changes.
+        /* Hack alert. We add 2 hours to avoid possible DST problems. (e.g. we go into daylight
+           savings and the date changes. */
         $startdate = $course->startdate + 7200;
 
         $dates = new stdClass();
-        $dates->start = $startdate + ($oneweekseconds * ($section->section - 1));
+        if (is_object($section)) {
+            $section = $section->section;
+        }
+
+        $dates->start = $startdate + ($oneweekseconds * ($section - 1));
         $dates->end = $dates->start + $oneweekseconds;
 
         return $dates;
@@ -722,7 +774,7 @@ class format_topcoll extends format_base {
     /**
      * Return the date of the passed section.
      *
-     * @param stdClass $section The course_section entry from the DB.
+     * @param int|stdClass $section The course_section entry from the DB.
      * @param stdClass $course The course entry from DB.
      * @return stdClass property date.
      */
@@ -732,7 +784,11 @@ class format_topcoll extends format_base {
            savings and the date changes. */
         $startdate = $course->startdate + 7200;
 
-        $day = $startdate + ($onedayseconds * ($section->section - 1));
+        if (is_object($section)) {
+            $section = $section->section;
+        }
+
+        $day = $startdate + ($onedayseconds * ($section - 1));
 
         return $day;
     }
@@ -766,6 +822,7 @@ class format_topcoll extends format_base {
             $updatedata['layoutstructure'] = get_config('format_topcoll', 'defaultlayoutstructure');
             $updatedata['layoutcolumns'] = get_config('format_topcoll', 'defaultlayoutcolumns');
             $updatedata['layoutcolumnorientation'] = get_config('format_topcoll', 'defaultlayoutcolumnorientation');
+            $updatedata['toggleiconposition'] = get_config('format_topcoll', 'defaulttoggleiconposition');
         }
         if ($togglealignment && has_capability('format/topcoll:changetogglealignment', $coursecontext) && $resetallifall) {
             $updatedata['togglealignment'] = get_config('format_topcoll', 'defaulttogglealignment');

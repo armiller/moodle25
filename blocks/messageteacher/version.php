@@ -25,8 +25,8 @@
  */
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->version = 2013060300;
-$plugin->requires = 2011120500;
+$plugin->version = 2013071300;
+$plugin->requires = 2013051400;
 $plugin->component = 'block_messageteacher';
 $plugin->maturity = MATURITY_STABLE;
-$plugin->release = '2.2.2';
+$plugin->release = '2.3';

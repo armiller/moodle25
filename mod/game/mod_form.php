@@ -30,7 +30,7 @@ class mod_game_mod_form extends moodleform_mod {
         else {     
             $gamekind = required_param('type', PARAM_ALPHA);
         }
-
+    
         //Hidden elements
         $mform->addElement('hidden', 'gamekind', $gamekind);
         $mform->setDefault('gamekind', $gamekind);
@@ -38,9 +38,12 @@ class mod_game_mod_form extends moodleform_mod {
         $mform->addElement('hidden', 'type', $gamekind);
         $mform->setDefault('type', $gamekind);
         $mform->setType('type', PARAM_ALPHA);
+        
+        $mform->addElement( 'hidden', 'gameversion', game_get_version());
+        $mform->setType('gameversion', PARAM_INT);
 
         $mform->addElement('header', 'general', get_string('general', 'form'));
-
+        
         $mform->addElement('text', 'name', 'Name', array('size'=>'64'));
         if (!empty($CFG->formatstringstriptags)){
             $mform->setType('name', PARAM_TEXT);
@@ -163,10 +166,10 @@ class mod_game_mod_form extends moodleform_mod {
         $mform->addElement('text', 'grade', get_string( 'grademax', 'grades'), array('size' => 4));
         $mform->setType('grade', PARAM_INT);
         $gradingtypeoptions = array();
-        $gradingtypeoptions[0] = get_string('gradehighest','game');
-        $gradingtypeoptions[1] = get_string('gradeaverage','game');
-        $gradingtypeoptions[2] = get_string('attemptfirst','game');
-        $gradingtypeoptions[3] = get_string('attemptlast','game');
+        $gradingtypeoptions[ GAME_GRADEHIGHEST] = get_string('gradehighest','game');
+        $gradingtypeoptions[ GAME_GRADEAVERAGE] = get_string('gradeaverage','game');
+        $gradingtypeoptions[ GAME_ATTEMPTFIRST] = get_string('attemptfirst','game');
+        $gradingtypeoptions[ GAME_ATTEMPTLAST] = get_string('attemptlast','game');
         $mform->addElement('select', 'grademethod', get_string('grademethod','game'), $gradingtypeoptions);
         
         // Open and close dates.
@@ -224,6 +227,8 @@ class mod_game_mod_form extends moodleform_mod {
             $mform->addElement('header', 'cross', get_string( 'cross_options', 'game'));
             $mform->addElement('text', 'param1', get_string('cross_maxcols', 'game'));
             $mform->setType('param1', PARAM_INT);
+            $mform->addElement('text', 'param4', get_string('cross_minwords', 'game'));
+            $mform->setType('param4', PARAM_INT);            
             $mform->addElement('text', 'param2', get_string('cross_maxwords', 'game'));
             $mform->setType('param2', PARAM_INT);
             $mform->addElement('selectyesno', 'param7', get_string('hangman_allowspaces','game'));
@@ -238,9 +243,11 @@ class mod_game_mod_form extends moodleform_mod {
 
         if($gamekind == 'cryptex'){
             $mform->addElement('header', 'cryptex', get_string( 'cryptex_options', 'game'));
-            $mform->addElement('text', 'param1', get_string('cryptex_maxcols', 'game'));
+            $mform->addElement('text', 'param1', get_string('cross_maxcols', 'game'));
             $mform->setType('param1', PARAM_INT);
-            $mform->addElement('text', 'param2', get_string('cryptex_maxwords', 'game'));
+            $mform->addElement('text', 'param4', get_string('cross_minwords', 'game'));
+            $mform->setType('param4', PARAM_INT);
+            $mform->addElement('text', 'param2', get_string('cross_maxwords', 'game'));
             $mform->setType('param2', PARAM_INT);
             $mform->addElement('selectyesno', 'param7', get_string('hangman_allowspaces','game'));
             $mform->addElement('text', 'param8', get_string('cryptex_maxtries','game'));

@@ -34,17 +34,25 @@ class block_messageteacher extends block_base {
         $this->title = get_string('pluginname', 'block_messageteacher');
     }
 
+    public function applicable_formats() {
+          return array('all' => true, 'my' => false);
+    }
+
     /**
      * Gets a list of "teachers" with the defined role, and displays a link to message each
      *
      * @access public
      * @return void
      */
-    public function has_config(){
+    public function has_config() {
         return true;
     }
     public function get_content() {
-        global $COURSE, $CFG, $USER, $DB, $OUTPUT;
+        global $COURSE, $CFG, $USER, $DB, $OUTPUT, $PAGE;
+
+        if ($this->content !== null) {
+            return $this->content;
+        }
 
         $this->content = new stdClass;
         $this->content->text = '';
@@ -83,7 +91,7 @@ class block_messageteacher extends block_base {
                             if (empty($usergroups)) {
                                 throw new Exception('nogroupmembership');
                             } else {
-                                foreach($usergroups as $usergroup) {
+                                foreach ($usergroups as $usergroup) {
                                     foreach ($teachers as $teacher) {
                                         if (groups_is_member($usergroup, $teacher->id)) {
                                             $groupteachers[$teacher->id] = $teacher;
@@ -106,7 +114,12 @@ class block_messageteacher extends block_base {
 
             $items = array();
             foreach ($teachers as $teacher) {
-                $url = new moodle_url('/message/discussion.php', array('id' => $teacher->id));
+                $urlparams = array (
+                    'courseid' => $COURSE->id,
+                    'referurl' => $this->page->url->out(),
+                    'recipientid' => $teacher->id
+                );
+                $url = new moodle_url('/blocks/messageteacher/message.php', $urlparams);
                 $picture = '';
                 if (get_config('block_messageteacher', 'showuserpictures')) {
                     $picture = new user_picture($teacher);
@@ -115,11 +128,15 @@ class block_messageteacher extends block_base {
                     $picture = $OUTPUT->render($picture);
                 }
                 $name = html_writer::tag('span', fullname($teacher));
-                $items[] = html_writer::tag('a', $picture.$name, array('href' => $url));
+                $attrs = array('href' => $url, 'class' => 'messageteacher_link');
+                $items[] = html_writer::tag('a', $picture.$name, $attrs);
             }
             $this->content->text = html_writer::alist($items);
         }
-        
+
+        $PAGE->requires->yui_module('moodle-block_messageteacher-form',
+                                    'M.block_messageteacher.form.init');
+
         return $this->content;
     }
 }

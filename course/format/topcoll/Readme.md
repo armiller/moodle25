@@ -6,7 +6,8 @@ If you find an issue with the format, please see the 'Reporting Issues' section 
 
 Required version of Moodle
 ==========================
-This version works with Moodle version 2013051400.00 release 2.5 (Build: 20130514) and above until the next release.
+This version works with Moodle version 2013051400.00 release 2.5 (Build: 20130514) and above within the 2.5 branch until the
+next release.
 
 Please ensure that your hardware and software complies with 'Requirements' in 'Installing Moodle' on
 'docs.moodle.org/25/en/Installing_Moodle'.
@@ -230,10 +231,45 @@ can be really useful in visualising the issue along with any files you consider 
 
 Version Information
 ===================
+9th July 2013 - Version 2.5.3
+  1.  Added the ability to set the position of the toggle as either left or right on a per course basis with
+      a default setting.  You need the 'changelayout' capability to be able to set this.
+  2.  Gratefully crowd funded on Moodle Garage -> http://www.moodlegarage.com/projects/collapsed-topics-left-to-right/.
+
+26th June 2013 - Version 2.5.2.2
+  1.  Fixed issue with 'Notice: String offset cast occurred in togglelib.php on line 68' when running on PHP 5.4.  Thanks
+      to Halldór Kristjánsson (https://moodle.org/user/profile.php?id=1611408) for reporting this.
+
+24th June 2013 - Version 2.5.2.1
+  1.  Fixed CONTRIB-4436 with a 'blocker' bug on V2.5.2 below with backups failing (do not ever install this version unless you
+      want to test your disaster recovery procedures).  Thanks to Mike Turico for reporting it.  Note to self and all, using html
+      tags in the 'get_section_name()' method in 'lib.php' will break backups and trash your database.
+
+23rd June 2013 - Version 2.5.2
+  1.  Fixed issue with sections not showing their contents in editing mode when open all has been used, then they are individually
+      closed and reopened.  Thanks to Marc Hermon for reporting this.
+  2.  Added small icon which shows up when updating.
+  3.  Ensure the correct arrow is used when not using JavaScript.
+  4.  Radically changed the toggle persistence storage mechanism to be based on a base 64 system using the following subset of ASCII:
+      ":;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\]^_`abcdefghijklmnopqrstuvwxy".  This is more efficient than the actual Base64 system of:
+      "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/" because there is no complex conversion from the character to
+      to the value it represents.  I also decided not to include "01" as that makes detection of the old mechanism simple for upgrade
+      purposes.
+      This was done to support courses with sections greater than fifty two.  Currently there is no upper limit bar what your machine
+      is capable of serving.  The length of the toggle persistence data increases and decreases automatically in responce to the number
+      of sections.  There are six sections per digit.
+  5.  Finally fixed having the 'toggle' word on toggles and not on the navigation menu with AJAX drag and drop working - CONTRIB-4403.
+  6.  Implemented MDL-33546.
+  7.  Fixed size of toggles altering when using AJAX drag and drop.
+  8.  Ran the code through the infamous 'Code Checker' version 2013060600, release 2.2.7 and cleared as much as possible.
+  9.  Note:  Once you upgrade to this version and beyond then going back will mean loss of the user preferences as you will need to
+             remove all 'topcoll_toggle_x' rows from the 'user_preferences' table first.
+
 6th June 2013 Version 2.5.1.1
   1.  Implemented MDL-39764 to fix maxsections < numsections issue.
   2.  Reversed the order of the history in this file for easy reading.
   3.  Cleaned up some of the CSS.
+  4.  Changes to 'renderer.php' because of MDL-21097.
 
 14th May 2013 Version 2.5.1 - Stable
   1.  First stable version for Moodle 2.5 stable.
@@ -966,6 +1002,6 @@ Desired Enhancements
 
 Me
 ==
-G J Barnard MSc. BSc(Hons)(Sndw). MBCS. CEng. CITP. PGCE. - 6th June 2013.
+G J Barnard MSc. BSc(Hons)(Sndw). MBCS. CEng. CITP. PGCE. - 9th July 2013.
 Moodle profile: http://moodle.org/user/profile.php?id=442195.
 Web profile   : http://about.me/gjbarnard
