@@ -121,13 +121,13 @@ div #region-main #HeaderLeft {
 	background-position: left top;
 	width: 423px;
 	height: 85px;
-	background-image: url([[pix:theme|Banner]]);
+	background-image: none;
 }
 
 div #region-main #HeaderStretch {
 	background-repeat: repeat;
 	background-position: right top;
-	background-image: url([[pix:theme|BG]]);
+	background-image: url([[pix:theme|MarbleHeader]]);
 	height: 85px;
 	
 }
