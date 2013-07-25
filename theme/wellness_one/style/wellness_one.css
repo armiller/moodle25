@@ -58,6 +58,13 @@ div.ComprehensionCheck {
 	margin-right:15%;
 	margin-left:15%;
 }
+div #region-main div.TabbedPanels h2 {
+	background-color: transparent;
+	color:#4747A4;
+	border:none;
+	text-indent:0;
+	padding-left: 0;
+}
 #page-course-view-topcoll div #region-main h2 {
 	color: #650199;
 	background-color: #D6ABD6;
@@ -170,13 +177,7 @@ div #region-main h2.headingblock, h2#pageheading.main, #page-mod-glossary-view h
 	display:none;
 }
 
-div #region-main div.TabbedPanels h2 {
-	background-color: transparent;
-	color:#4747A4;
-	border:none;
-	text-indent:0;
-	padding-left: 0;
-}
+
 
 td.TableHead {
 	background-color:#4747A4;
@@ -333,6 +334,20 @@ span.instancename {
 	font-weight:bold;
 }
 /*Collapsible panel*/
+/* -- The section name and summary of a Toggle -- */
+.course-content ul.ctopics li.section .content .toggle  {
+    display: block;
+    text-align: left;
+    padding: 0 0;
+    width: auto;
+    -moz-border-radius: 0.7em;
+    -webkit-border-radius: 0.7em;
+    border-radius: 0.7em;
+	background-color: #CECEEA;
+	border: 1px ridge #999;
+	color: #000;
+}
+
 div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
 	background-color: #CECEEA;
 	border: 1px ridge #999;
