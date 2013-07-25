@@ -63,7 +63,7 @@ div.ComprehensionCheck {
 	background-color: #D6ABD6;
 	background-repeat: no-repeat;
 	background-position: left;
-	margin-left: 22px;
+	text-indent: 22px;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	border-top-width: 4px;
 	border-bottom-width: 2px;
@@ -346,7 +346,6 @@ span.instancename {
     -webkit-border-radius: 0.7em;
     border-radius: 0.7em;*/
 	background-color: #CECEEA;
-	border: 1px ridge #999;
 	color: #000;
 	border-bottom-width: 1px;
 	border-top-style: none;
