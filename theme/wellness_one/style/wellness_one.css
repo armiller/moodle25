@@ -40,7 +40,7 @@ div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.Comprehen
 	/*font-weight: bold;*/
 	padding-top: 0px;
 	margin-top: 0px;
-	font-size: 1.75em;
+	/*font-size: 1.75em;*/
 	border-bottom-width: 4px;
 	border-bottom-style: solid;
 	border-bottom-color: #000;
@@ -52,7 +52,7 @@ div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.Comprehen
 	border-top-style: solid;
 	border-top-color: #000;
 	text-indent: 5px;
-	letter-spacing: .05em;
+	/*letter-spacing: .05em;*/
 }
 div.ComprehensionCheck {
 	margin-right:15%;
