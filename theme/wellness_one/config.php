@@ -37,8 +37,8 @@ $THEME->name = 'wellness_one';
 //////////////////////////////////
 //
 $THEME->doctype = 'html5';
-$THEME->parents = array('bootstrapbase');
-$THEME->sheets = array('custom');
+$THEME->parents = array('bootstrapbase','essential');
+$THEME->sheets = array('wellness_one');
 $THEME->supportscssoptimisation = false;
 $THEME->yuicssmodules = array();
 
@@ -53,5 +53,6 @@ $THEME->plugins_exclude_sheets = array(
     ),
 );
 
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
-$THEME->csspostprocess = 'clean_process_css';
+//Might not need these
+//$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+//$THEME->csspostprocess = 'theme_essential_process_css';
