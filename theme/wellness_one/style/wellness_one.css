@@ -73,6 +73,7 @@ div.ComprehensionCheck {
 	border-right-color: #650199;
 	border-bottom-color: #650199;
 	border-left-color: #650199;
+	font-size:24px;
 	
 }
 #page-course-view-topcoll div #region-main div.TabbedPanels h2 {
@@ -82,6 +83,9 @@ div.ComprehensionCheck {
 	text-indent:0;
 	padding-left: 0;
 	margin-left:5px;
+}
+.course-content .current {
+	background-color:transparent;
 }
 
 /*div #region-main h2 {
