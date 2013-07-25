@@ -58,13 +58,6 @@ div.ComprehensionCheck {
 	margin-right:15%;
 	margin-left:15%;
 }
-#page-course-view-topcoll div #region-main div.TabbedPanels h2 {
-	background-color: transparent;
-	color:#4747A4;
-	border:none;
-	text-indent:0;
-	padding-left: 0;
-}
 #page-course-view-topcoll div #region-main h2 {
 	color: #650199;
 	background-color: #D6ABD6;
@@ -82,6 +75,15 @@ div.ComprehensionCheck {
 	border-left-color: #650199;
 	
 }
+#page-course-view-topcoll div #region-main div.TabbedPanels h2 {
+	background-color: transparent;
+	color:#4747A4;
+	border:none;
+	text-indent:0;
+	padding-left: 0;
+	margin-left:5px;
+}
+
 /*div #region-main h2 {
 	color: #650199;
 	background-color: none;
@@ -352,6 +354,11 @@ span.instancename {
 	border-bottom-style: ridge;
 	border-left-style: none;
 	border-bottom-color: #999;
+}
+h3.sectionname {
+	color:#000;
+	font-size: 10px;
+	font-weight: normal;
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
