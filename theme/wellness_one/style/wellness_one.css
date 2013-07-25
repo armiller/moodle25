@@ -36,7 +36,7 @@ div #region-main #HeaderTitle img {
 
 div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.ComprehensionCheck {
 	color: #F7EFFA;
-	font-family: Anton, "Times New Roman", Times, serif;
+	font-family: Courgette, "Times New Roman", Times, serif;
 	/*font-weight: bold;*/
 	padding-top: 0px;
 	margin-top: 0px;
@@ -64,7 +64,7 @@ div.ComprehensionCheck {
 	background-repeat: no-repeat;
 	background-position: left;
 	text-indent: 22px;
-	font-family: Anton, "Times New Roman", Times, serif;
+	font-family: Courgette, "Times New Roman", Times, serif;
 	border-top-width: 4px;
 	border-bottom-width: 2px;
 	border-top-style: ridge;
@@ -81,7 +81,7 @@ div #region-main h2 {
 	background-repeat: no-repeat;
 	background-position: left;
 	text-indent: 0px;
-	font-family: Anton, "Times New Roman", Times, serif;
+	font-family: Courgette, "Times New Roman", Times, serif;
 	border: none;
 	letter-spacing: .05em;
 }
@@ -217,30 +217,6 @@ li.Voki {
 	display:inline;
 }
 	
-.Assessment {
-	background-image: url(file:///C|/Users/warden_kimber/Documents/MyWebs/courses/pe-health/HZ209217000/images/Banner.jpg);
-	background-repeat: no-repeat;
-	color: #FFF;
-	font-size: 24px;
-	background-color: #000;
-	font-family: Verdana, Arial, Helvetica, sans-serif;
-	line-height: 1.3em;
-	font-weight: 700;
-	border-top-width: 4px;
-	border-bottom-width: 2px;
-	border-top-style: ridge;
-	border-top-color: #4C264C;
-	border-right-color: #4C264C;
-	border-bottom-color: #4C264C;
-	border-left-color: #4C264C;
-	background-position: right top;
-	filter: Alpha(Opacity=60%, FinishOpacity=60%, StartX=0, StartY=0, FinishX=0, FinishY=0);
-	height: auto;
-	border-bottom-style: ridge;
-	padding-top: 5px;
-}
-
-
 
 .Exercise {
 	color: #650199;
