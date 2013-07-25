@@ -337,14 +337,15 @@ span.instancename {
 }
 /*Collapsible panel*/
 /* -- The section name and summary of a Toggle -- */
-.course-content ul.ctopics li.section .content .toggle  {
-   /* display: block;
+.course-content ul.ctopics li.section .content .toggle a {
+    /*display: block;
     text-align: left;
     padding: 0 0;
     width: auto;
     -moz-border-radius: 0.7em;
     -webkit-border-radius: 0.7em;
     border-radius: 0.7em;*/
+	
 	background-color: #CECEEA;
 	color: #000;
 	border-bottom-width: 1px;
@@ -354,7 +355,9 @@ span.instancename {
 	border-left-style: none;
 	border-bottom-color: #999;
 }
-h3.sectionname {
+/* -- The topic summary text -- */
+.course-content ul.ctopics li.section .content .toggle a p {
+    text-align: left;
 	color:#000;
 	font-size: 10px;
 	font-weight: normal;
