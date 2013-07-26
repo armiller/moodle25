@@ -401,4 +401,6 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 	border-bottom-right-radius: 5px; 
 	width:90%;
 	max-width:600px;
+	margin-left:auto;
+	margin-right:auto;
 }
