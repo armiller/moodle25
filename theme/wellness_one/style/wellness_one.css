@@ -126,6 +126,7 @@ div #region-main h3 {
 	font-weight: bold;
 	color: #2E00D5;
 	font-family: Arial, Helvetica, sans-serif;
+	margin-bottom:.5em;
 }
 
 div #region-main h3.LessonAssignmentLabel {
