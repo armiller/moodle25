@@ -138,7 +138,7 @@ div #region-main h4 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #650199;
-	margin-bottom: 0px;
+	
 
 }
 div #region-main h5 {
@@ -207,7 +207,7 @@ td.TableHead {
 	left: 7px;
 }
 
-div #region-main #Highlight {
+div #region-main #Highlight, div #region-main .Highlight {
 	background-color: #9999FF;
 	/*padding: 15px;
 	margin-right: 200px;
@@ -313,23 +313,23 @@ li.Voki {
 	color: #C09;
 }
 
-div #RequiredReading {
+div #region-main #RequiredReading {
 	background-color: #D9D9FD;
 	border-top-color: #362251;
 	border-right-color: #362251;
 	border-bottom-color: #362251;
 	border-left-color: #362251;
 }
-div #RequiredReading p, div #RequiredReading ul li, div #RequiredReading a {	
+div #region-main #RequiredReading p, div #RequiredReading ul li, div #RequiredReading a {	
 	color: #000;
 }
-div #RequiredReading a:hover {
+div #region-main #RequiredReading a:hover {
 	text-decoration:underline;
 }
-div #RequiredReading a:visited {
+div #region-main #RequiredReading a:visited {
 	color: #333;
 }
-div #RequiredReading h3 {
+div #region-main #RequiredReading h3 {
 	color: #362251;
 	background-color:transparent;
 }
