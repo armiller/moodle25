@@ -137,7 +137,7 @@ div #region-main h4 {
 	font-size: 14px;
 	font-weight: bold;
 	color: #650199;
-	margin-bottom: -1em;
+	margin-bottom: 0px;
 
 }
 div #region-main h5 {
@@ -384,7 +384,7 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 }*/
 .Outlined {
 	border: 1px solid #000;
-	padding: 5px;
+	padding: 10px;
 	text-align: center;
 	-moz-box-shadow: 3px 3px 4px #000;
 	-webkit-box-shadow: 3px 3px 4px #000;
