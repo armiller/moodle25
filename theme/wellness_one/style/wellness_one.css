@@ -351,6 +351,7 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
     -webkit-border-radius: 0.7em;
     border-radius: 0.7em;*/
 	
+	/*
 	background-color: #CECEEA;
 	color: #000;
 	border-bottom-width: 1px;
@@ -358,14 +359,38 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	border-right-style: none;
 	border-bottom-style: ridge;
 	border-left-style: none;
-	border-bottom-color: #999;
+	border-bottom-color: #999;*/
+	
+	color: #650199;
+	background-color: #D6ABD6;
+	background-repeat: no-repeat;
+	background-position: left;
+	text-indent: 22px;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	border-top-width: 4px;
+	border-bottom-width: 2px;
+	border-top-style: ridge;
+	border-bottom-style: ridge;
+	border-top-color: #650199;
+	border-right-color: #650199;
+	border-bottom-color: #650199;
+	border-left-color: #650199;
+	font-size:24px;
+	
 }
 /* -- The topic summary text -- */
 .course-content ul.ctopics li.section .content .toggle a p, div #region-main h3.sectionname {
-    text-align: left;
+    /*text-align: left;
 	color:#000;
 	font-size: 10px;
-	font-weight: normal;
+	font-weight: normal;*/
+	
+	color: #650199;
+	
+	text-indent: 22px;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	
+	font-size:24px;
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
