@@ -60,11 +60,12 @@ div.ComprehensionCheck {
 }
 #page-course-view-topcoll div #region-main h2 {
 	color: #650199;
-	background-color: #D6ABD6;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	font-size:24px;
+	/*background-color: #D6ABD6;
 	background-repeat: no-repeat;
 	background-position: left;
 	text-indent: 22px;
-	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	border-top-width: 4px;
 	border-bottom-width: 2px;
 	border-top-style: ridge;
@@ -73,7 +74,7 @@ div.ComprehensionCheck {
 	border-right-color: #650199;
 	border-bottom-color: #650199;
 	border-left-color: #650199;
-	font-size:24px;
+	*/
 	
 }
 #page-course-view-topcoll div #region-main div.TabbedPanels h2 {
