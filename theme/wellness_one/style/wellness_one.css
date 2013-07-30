@@ -362,30 +362,8 @@ span.instancename {
 /*Collapsible panel*/
 /* -- The section name and summary of a Toggle -- */
 div #region-main .course-content ul.ctopics li.section .content .toggle a {
-    /*display: block;
-    text-align: left;
-    padding: 0 0;
-    width: auto;
-    -moz-border-radius: 0.7em;
-    -webkit-border-radius: 0.7em;
-    border-radius: 0.7em;*/
-	
-	/*
-	background-color: #CECEEA;
-	color: #000;
-	border-bottom-width: 1px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: ridge;
-	border-left-style: none;
-	border-bottom-color: #999;*/
-	
-	
+ 
 	background-color: #D6ABD6;
-	/*color: #650199;
-	
-	font-family: Gochi Hand, "Times New Roman", Times, serif;
-	font-size:24px;*/
 	border-top-width: 4px;
 	border-bottom-width: 2px;
 	border-top-style: ridge;
@@ -401,16 +379,12 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 }
 /* -- The topic summary text -- */
 .course-content ul.ctopics li.section .content .toggle a p, div #region-main h3.sectionname {
-    /*text-align: left;
-	color:#000;
-	font-size: 10px;
-	font-weight: normal;*/
-	
+ 
 	color: #650199;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;	
 	font-size:24px;
 	margin:0px;
-	text-indent: 15px;
+	text-indent: 25px;
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
