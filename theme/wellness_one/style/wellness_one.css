@@ -394,7 +394,8 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	border-right-color: #650199;
 	border-bottom-color: #650199;
 	border-left-color: #650199;
-	padding:5px;
+	padding:0px;
+	margin:0px;
 	
 	
 }
@@ -408,7 +409,7 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	color: #650199;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;	
 	font-size:24px;
-	margin:none;
+	margin:0px;
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
