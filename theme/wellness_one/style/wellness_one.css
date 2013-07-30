@@ -58,6 +58,23 @@ div.ComprehensionCheck {
 	margin-right:15%;
 	margin-left:15%;
 }
+div #region-main h2 {
+	color: #650199;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	font-size:24px;
+	background-color: #D6ABD6;
+	background-repeat: no-repeat;
+	background-position: left;
+	text-indent: 22px;
+	border-top-width: 4px;
+	border-bottom-width: 2px;
+	border-top-style: ridge;
+	border-bottom-style: ridge;
+	border-top-color: #650199;
+	border-right-color: #650199;
+	border-bottom-color: #650199;
+	border-left-color: #650199;
+}
 #page-course-view-topcoll div #region-main h2 {
 	color: #650199;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
@@ -77,23 +94,7 @@ div.ComprehensionCheck {
 	*/
 	
 }
-div #region-main h2 {
-	color: #650199;
-	font-family: Gochi Hand, "Times New Roman", Times, serif;
-	font-size:24px;
-	background-color: #D6ABD6;
-	background-repeat: no-repeat;
-	background-position: left;
-	text-indent: 22px;
-	border-top-width: 4px;
-	border-bottom-width: 2px;
-	border-top-style: ridge;
-	border-bottom-style: ridge;
-	border-top-color: #650199;
-	border-right-color: #650199;
-	border-bottom-color: #650199;
-	border-left-color: #650199;
-}
+
 #page-course-view-topcoll div #region-main div.TabbedPanels h2 {
 	background-color: transparent;
 	color:#4747A4;
@@ -379,12 +380,14 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	border-left-style: none;
 	border-bottom-color: #999;*/
 	
-	color: #650199;
+	
 	background-color: #D6ABD6;
 	background-repeat: no-repeat;
 	background-position: left;
+	/*color: #650199;
 	text-indent: 22px;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	font-size:24px;*/
 	border-top-width: 4px;
 	border-bottom-width: 2px;
 	border-top-style: ridge;
@@ -393,7 +396,8 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	border-right-color: #650199;
 	border-bottom-color: #650199;
 	border-left-color: #650199;
-	font-size:24px;
+	padding:5px;
+	
 	
 }
 /* -- The topic summary text -- */
@@ -404,10 +408,7 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	font-weight: normal;*/
 	
 	color: #650199;
-	
-	text-indent: 22px;
-	font-family: Gochi Hand, "Times New Roman", Times, serif;
-	
+	font-family: Gochi Hand, "Times New Roman", Times, serif;	
 	font-size:24px;
 }
 
