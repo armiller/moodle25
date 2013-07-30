@@ -382,8 +382,6 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	
 	
 	background-color: #D6ABD6;
-	background-repeat: no-repeat;
-	background-position: left;
 	/*color: #650199;
 	text-indent: 22px;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
@@ -410,6 +408,7 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	color: #650199;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;	
 	font-size:24px;
+	margin:none;
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
@@ -448,4 +447,7 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 	max-width:600px;
 	margin-left:auto;
 	margin-right:auto;
+}
+div#pageintro {
+	border:none;
 }
