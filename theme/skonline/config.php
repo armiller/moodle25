@@ -138,4 +138,4 @@ $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->enable_dock = true;
 $THEME->editor_sheets = array('editor');
 $THEME->javascripts = array('skonline', 'jquery-1.10.1.min.js');
-$THEME->javascripts_footer = array('jquery-extendend-selectors','googleanalytics','jquery.expander.js);
+$THEME->javascripts_footer = array('jquery-extendend-selectors','googleanalytics','jquery.expander.js');
