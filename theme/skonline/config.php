@@ -137,5 +137,5 @@ $THEME->layouts = array(
 $THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->enable_dock = true;
 $THEME->editor_sheets = array('editor');
-$THEME->javascripts = array('skonline', 'jquery-1.10.1.min.js');
-$THEME->javascripts_footer = array('jquery.expander','jquery_expander_custom','googleanalytics');
+$THEME->javascripts = array('skonline', 'jquery_1_10_1_min');
+$THEME->javascripts_footer = array('jquery_expander','jquery_expander_custom','googleanalytics');
