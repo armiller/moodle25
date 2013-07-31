@@ -39,5 +39,7 @@
 $plugins = array(
     'modernizr'     => array('files' => array('modernizr.js')),
     'cslider'     => array('files' => array('cslider.js')),
-    'custom'   => array('files' => array('custom.js'))
+    'custom'   => array('files' => array('custom.js')),
+	'jqueryexpander'   => array('files' => array('jqueryexpander.js')),
+	'jqueryexpandercustom'   => array('files' => array('jqueryexpandercustom.js'))
 );
