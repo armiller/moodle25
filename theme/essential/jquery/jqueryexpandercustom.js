@@ -18,7 +18,7 @@ $(document).ready(function() {
     //userCollapseText: '[^]'  // default is 'read less'
  // });
   
-   $('div#Announcements h1:gt(0)~*').expander({
+   $('.announcement h1:gt(0)~*').expander({
     slicePoint:       80,  // default is 100
   
     
