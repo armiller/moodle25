@@ -5,9 +5,9 @@
 /// how Moodle uses this theme.
 ////////////////////////////////////////////////////////////////////////////////
 
-$THEME->name = 'jquery_test';
+$THEME->name = 'wellness_one';
 
-$THEME->sheets = array('base', 'skonline', 'browser', 'ImportedFromMoodle1_9', 'CoursesSitewide', 'jquery_test');
+$THEME->sheets = array('base', 'skonline', 'browser', 'ImportedFromMoodle1_9', 'CoursesSitewide', 'wellness_one');
 /// This variable is an array containing the names of all the
 /// stylesheet files you want included in this theme, and in what order
 ////////////////////////////////////////////////////////////////////////////////
