@@ -25,6 +25,9 @@
  */
 
 require_once("../../config.php");
+$PAGE->requires->js('/javascript/jquery.js');
+$PAGE->requires->js('/javascript/jqueryexpander.js');
+$PAGE->requires->js('/javascript/jqueryexpandercustom.js');
 
 $id = optional_param('id',0,PARAM_INT);    // Course Module ID, or
 $l = optional_param('l',0,PARAM_INT);     // Announcement ID
