@@ -26,9 +26,9 @@
 
 require_once("../../config.php");
 require_once("lib.php");
-$PAGE->requires->jquery();
-$PAGE->requires->jquery_plugin('jqueryexpander');
-$PAGE->requires->jquery_plugin('jqueryexpandercustom');
+$PAGE->requires->js('/javascript/jquery.js');
+$PAGE->requires->js('/javascript/jqueryexpander.js');
+$PAGE->requires->js('/javascript/jqueryexpandercustom.js');
 
 
 $id = required_param('id',PARAM_INT);   // course
