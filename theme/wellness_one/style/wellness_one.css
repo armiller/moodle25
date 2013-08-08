@@ -408,7 +408,7 @@ div #region-main .course-content ul.ctopics li.section:nth-of-type(2) .content .
 	text-indent: 25px;
 }
 /* For Unit text in collapsible topics */
-div #region-main .course-content ul.ctopics li.section:nth-of-type(2) h3.sectionname {
+div #region-main .course-content ul.ctopics li.section:nth-of-type(2) h3.sectionname, div #region-main .course-content ul.ctopics li.section:nth-of-type(6) h3.sectionname, div #region-main .course-content ul.ctopics li.section:nth-of-type(10) h3.sectionname {
 	color: #F7EFFA;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	text-indent: 25px;	
