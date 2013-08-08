@@ -34,7 +34,7 @@ div #region-main #HeaderTitle img {
 	bottom: 0px;
 }
 
-div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.ComprehensionCheck {
+div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.ComprehensionCheck, ul.ctopics li:nth-of-type(3) h3.sectionname {
 	color: #F7EFFA;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	/*font-weight: bold;*/
