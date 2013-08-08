@@ -34,7 +34,7 @@ div #region-main #HeaderTitle img {
 	bottom: 0px;
 }
 
-div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.ComprehensionCheck, ul.ctopics li:nth-of-type(3) h3.sectionname {
+div #region-main h1, #page-mod-lesson-view span#maincontent+h2.main, p.ComprehensionCheck {
 	color: #F7EFFA;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	/*font-weight: bold;*/
@@ -360,7 +360,7 @@ span.instancename {
 	font-weight:bold;
 }
 /*Collapsible panel*/
-/* -- The section name and summary of a Toggle -- */
+/* For Lesson heads in collapsible topics */
 div #region-main .course-content ul.ctopics li.section .content .toggle a {
  
 	background-color: #D6ABD6;
@@ -377,7 +377,28 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	
 	
 }
-/* -- The topic summary text -- */
+/*div #region-main .course-content ul.ctopics li:nth-of-type(2) h3.sectionname*/ 
+/*For Unit heads in collapsible topics*/
+div #region-main .course-content ul.ctopics li.section:nth-of-type(2) .content .toggle a {
+	color: #F7EFFA;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	/*font-weight: bold;*/
+	padding-top: 0px;
+	margin-top: 0px;
+	font-size: 28px;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #000;
+	background-color: #000;
+	background-image: url([[pix:theme|H1BG]]);
+	background-repeat: no-repeat;
+	background-position: right top;
+	border-top-width: 4px;
+	border-top-style: solid;
+	border-top-color: #000;
+	text-indent: 5px;
+}
+/* -- For Lesson text in collapsible topics -- */
 .course-content ul.ctopics li.section .content .toggle a p, div #region-main h3.sectionname {
  
 	color: #650199;
@@ -385,6 +406,12 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 	font-size:24px;
 	margin:0px;
 	text-indent: 25px;
+}
+/* For Unit text in collapsible topics */
+div #region-main .course-content ul.ctopics li.section:nth-of-type(2) h3.sectionname {
+	color: #F7EFFA;
+	font-family: Gochi Hand, "Times New Roman", Times, serif;
+	text-indent: 25px;	
 }
 
 /*div #region-main #sectionatag-1, div #region-main #sectionatag-2, div #region-main #sectionatag-3, div #region-main #sectionatag-4, div #region-main #sectionatag-5,div #region-main #sectionatag-6, div #region-main #sectionatag-7, div #region-main #sectionatag-8, div #region-main #sectionatag-9, div #region-main #sectionatag-10 {
