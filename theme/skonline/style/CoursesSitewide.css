@@ -156,6 +156,9 @@ div #region-main #Announcements, div #region-main .announcement {
 	max-height: 300px;
 	overflow:auto;
 }
+div #region-main .announcement h1 {
+	clear:both;
+}
 span#completionprogressid {
 	display: none;
 }
