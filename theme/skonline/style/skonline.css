@@ -2,6 +2,7 @@
 /* CSS Document */
 body, div, p, li, input, option, textarea, h1, h2, h3, h4, h5 {
 	font-family: Verdana, Geneva, sans-serif;
+	margin-bottom:.25em;
 	
 }
 
