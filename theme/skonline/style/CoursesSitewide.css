@@ -156,7 +156,7 @@ div #region-main #Announcements, div #region-main .announcement {
 	max-height: 300px;
 	overflow:auto;
 }
-#page-mod-lesson-view div#region-main .announcement h1 {
+#page-course-view-topcoll div#region-main .announcement h1 {
 	clear:both;
 }
 span#completionprogressid {
