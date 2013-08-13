@@ -237,7 +237,7 @@ div #region-main #Highlight, div #region-main .Highlight {
 div #region-main div.no-overflow .TabbedPanelsContent div#Highlight {
 	background-color:#9999FF;
 }
-#Announcements, div.ComprehensionCheck, .announcement {
+#Announcements, div.ComprehensionCheck, div #region-main li.activity.announcement.modtype_announcement {
 	background-color:#F5DB00;
 }
 li.Voki {
