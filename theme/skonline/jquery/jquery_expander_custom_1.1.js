@@ -20,8 +20,8 @@ $(document).ready(function() {
   
    $('.announcement h1:gt(0)~*').expander({
     slicePoint:       80,  // default is 100
-  
-    
+   expandText: 'more',
+    expandPrefix: '...',
 
   });
 
