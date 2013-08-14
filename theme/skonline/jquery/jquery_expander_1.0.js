@@ -23,7 +23,7 @@
       // text displayed in a link instead of the hidden part of the element.
       // clicking this will expand/show the hidden/collapsed text
       expandText: 'read more',
-      expandPrefix: '… ',
+      expandPrefix: '...',
 
       expandAfterSummary: false,
 
