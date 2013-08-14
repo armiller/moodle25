@@ -4,6 +4,7 @@
 
 div #region-main #Header {
 	height: auto;
+	overflow: hidden;
 }
 div #region-main #HeaderLeft {
 	width: 579px;
