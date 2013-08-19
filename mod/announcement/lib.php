@@ -227,8 +227,3 @@ function announcement_supports($feature) {
     }
 }
 
- function theme_skonline_page_init(moodle_page $page) {
-    $page->requires->jquery();
-    $page->requires->jquery_plugin('expander', 'theme_skonline');
-	$page->requires->jquery_plugin('expander_custom', 'theme_skonline');
- }
