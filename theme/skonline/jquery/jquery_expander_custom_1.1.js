@@ -17,6 +17,8 @@ $(document).ready(function() {
     //collapseTimer:    5000, // re-collapses after 5 seconds; default is 0, so no re-collapsing
     //userCollapseText: '[^]'  // default is 'read less'
  // });
+ 
+ //Select the <h1>s greater than (gt) the first one (numbered 0) plus everything that follows until the next <h1>
   
    $('.announcement h1:gt(0)~*').expander({
     slicePoint:       80,  // default is 100

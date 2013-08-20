@@ -159,6 +159,10 @@ div #region-main #Announcements, div #region-main .announcement {
 div #region-main li.activity.announcement.modtype_announcement h1 {
 	clear:both;
 }
+div #region-main li.activity.announcement.modtype_announcement p.AnnouncementHead {
+	font-size: x-large;
+	font-weight: bold;
+}
 span#completionprogressid {
 	display: none;
 }
