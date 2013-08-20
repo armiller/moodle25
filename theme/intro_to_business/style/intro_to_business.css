@@ -70,7 +70,7 @@ div #region-main .BannerTitle {
 div #region-main h1,  div #region-main #Announcements, div #region-main .announcement {
 	background-color: #D3D9E7;
 	color: #000;
-	margin: 0px;
+	margin:0px;
 	vertical-align: middle;
 	border: 1px solid #2C5882;
 	-moz-border-radius-topleft: 5px;
@@ -90,18 +90,20 @@ div #region-main h1,  div #region-main #Announcements, div #region-main .announc
 div #region-main #Announcements h1, div #region-main div.announcement h1 {
 	border:none;
 	background-image: none;
-	border:none;
+	border:none; !important
 	padding-left:0px;
 	margin-top: .75em;
 	
 }
 #Announcements h1:first-child, .announcement h1:first-child {
-	padding: 4px 20px 4px 40px;
-	
 	background-repeat: no-repeat;
-	background-position: left center;	
+	background-position: left center;
 	margin: 0px;
 	vertical-align: middle;
+	padding-top: 4px;
+	padding-right: 20px;
+	padding-bottom: 4px;
+	padding-left: 20px;
 }
 
 	
