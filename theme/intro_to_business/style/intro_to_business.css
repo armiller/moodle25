@@ -86,8 +86,11 @@ div #region-main h1,  div #region-main #Announcements, div #region-main .announc
 	padding-bottom: 4px;
 	padding-left: 20px;
 }
+div #region-main .announcement {
+	margin-top: 60px;
+}
 
-div #region-main #Announcements h1, div #region-main div.announcement h1 {
+div #region-main #Announcements h1, div #region-main .announcement h1 {
 	border:none;
 	background-image: none;
 	border:none; !important
