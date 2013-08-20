@@ -98,16 +98,10 @@ div #region-main #Announcements h1, div #region-main .announcement h1 {
 	margin-top: .75em;
 	
 }
-#Announcements h1:first-child, .announcement h1:first-child {
-	background-repeat: no-repeat;
-	background-position: left center;
-	margin: 0px;
-	vertical-align: middle;
-	padding-top: 4px;
-	padding-right: 20px;
-	padding-bottom: 4px;
-	padding-left: 20px;
+div #region-main .announcement .AnnouncementHead {
+	color: #2C5882;
 }
+
 
 	
 #region-main h2 {
