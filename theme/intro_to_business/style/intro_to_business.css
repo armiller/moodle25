@@ -94,7 +94,7 @@ div #region-main #Announcements h1, div #region-main .announcement h1 {
 	border:none;
 	background-image: none;
 	border:none; !important
-	padding-left:0px;
+	padding-left:0px; !important
 	margin-top: .75em;
 	
 }
