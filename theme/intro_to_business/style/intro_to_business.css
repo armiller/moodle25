@@ -105,11 +105,10 @@ div #region-main .announcement {
 	
 }
 
-div #region-main .announcement h1 {
+div #region-main li.activity.announcement.modtype_announcement h1 {
 	border:none;
 	background-image: none;
-	border:none; !important
-	padding: 0px; !important
+	padding-left: 0px;
 	/*margin-top: .75em;*/
 	background-color:#F0F;
 	
