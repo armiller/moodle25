@@ -90,7 +90,6 @@ div #region-main .announcement {
 	margin-top: 60px;
 	background-color: #D3D9E7;
 	color: #000;
-	margin:0px;
 	vertical-align: middle;
 	border: 1px solid #2C5882;
 	-moz-border-radius-topleft: 5px;
@@ -101,10 +100,10 @@ div #region-main .announcement {
 	-moz-border-radius-bottomright: 5px;
 	border-top-right-radius: 5px;
 	border-bottom-right-radius: 5px;
-	padding-top: 4px;
+	/*padding-top: 4px;
 	padding-right: 20px;
 	padding-bottom: 4px;
-	/*padding-left: 20px;*/
+	padding-left: 20px;*/
 	
 }
 
@@ -112,8 +111,8 @@ div #region-main li.activity.announcement.modtype_announcement h1 {
 	border:none;
 	background-image: none;
 	border:none; !important
-	padding-left: 0px; !important
-	margin-top: .75em;
+	padding: 0px; !important
+	/*margin-top: .75em;*/
 	background-color:#F0F;
 	
 }
