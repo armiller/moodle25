@@ -105,7 +105,7 @@ div #region-main .announcement {
 	
 }
 
-div #region-main li.activity.announcement.modtype_announcement h1 {
+div #region-main .announcement h1 {
 	border:none;
 	background-image: none;
 	border:none; !important
