@@ -107,31 +107,38 @@ div#region-main .announcement h1 {
 }
 
 div #region-main #Header {
-	height: 85px;
-	border-radius: 6px;
+	height: 86px;
+	/*border-radius: 6px;
 	-webkit-top-left-border-radius: 6px;
 	-webkit-bottom-right-border-radius: 6px;
 	-moz-border-radius: 6px;
 	-khtml-border-radius: 6px;
 	
-	overflow: hidden;
+	overflow: hidden;*/
 }
 div #region-main #HeaderLeft {
+	background-image: url([[pix:theme|MarbleHeaderLeft]]);
 	background-repeat: no-repeat;
 	background-position: left top;
-	width: 423px;
-	height: 85px;
+	width: auto;
+	height: 86px;
 	background-image: none;
 }
 
 div #region-main #HeaderStretch {
-	background-repeat: no-repeat;
-	background-position: right top;
-	background-image: url([[pix:theme|MarbleHeader]]);
-	height: 85px;
+	background-repeat: repeat-x;
+	background-position: left top;
+	background-image: url([[pix:theme|MarbleHeaderStretch]]);
+	height: 86px;
 	
 }
-
+div #region-main #HeaderRight {
+	background-image: url([[pix:theme|MarbleHeaderRight]]);
+	background-repeat:no-repeat;
+	background-position:right top;
+	width: 61px;
+	height:86px;
+}
 
 
 div #region-main a {
