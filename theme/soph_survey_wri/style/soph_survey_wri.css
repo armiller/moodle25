@@ -5,7 +5,7 @@
    
 
 
-div #region-main  tr#section-0 div.no-overflow div #Announcements {
+div #region-main .announcements {
 	/*For IE*/
 	background-color: #FEF6AD;
 	margin-top: 0;
@@ -30,7 +30,7 @@ div #region-main  tr#section-0 div.no-overflow div #Announcements {
 }
 
 
-div#region-main #Announcements p, div#region-main #Announcements li {
+div#region-main .announcement p, div#region-main .announcement li {
 	margin: 0;
 	display: block;
 	font-size: 14pt;
@@ -39,25 +39,25 @@ div#region-main #Announcements p, div#region-main #Announcements li {
 	letter-spacing: 2px;
 	vertical-align: text-bottom;
 }
-div#region-main #Announcements p + p {
+div#region-main .announcement p + p {
 	margin-top: 25px;
 }
-div#region-main #Announcements ul, div#region-main #Announcements ol {
+div#region-main .announcement ul, div#region-main .announcement ol {
 	margin-top:25px;
 	margin-bottom: 25px;
 }
-div#region-main #Announcements ol + h1, div#region-main #Announcements ol + h2, div#region-main #Announcements ol + h3, div#region-main #Announcements ol + h4, div#region-main #Announcements ol + h5, div#region-main #Announcements ul + h1, div#region-main #Announcements ul + h2, div#region-main #Announcements ul + h3, div#region-main #Announcements ul + h4, div#region-main #Announcements ul + h5 {
+div#region-main .announcement ol + h1, div#region-main .announcement ol + h2, div#region-main .announcement ol + h3, div#region-main .announcement ol + h4, div#region-main .announcement ol + h5, div#region-main .announcement ul + h1, div#region-main .announcement ul + h2, div#region-main .announcement ul + h3, div#region-main .announcement ul + h4, div#region-main .announcement ul + h5 {
 	margin-top:-17px;
 }
-div #region-main #Announcements ul li {
+div #region-main .announcement ul li {
 	list-style-type:disc;
 }
-div #region-main #Announcements ol li {
+div #region-main .announcement ol li {
 	list-style-type:decimal;
 }
 
-div#region-main #Announcements h1, div#region-main #Announcements h2, div#region-main #Announcements h3,
-div#region-main #Announcements h4, div#region-main #Announcements h5 {
+div#region-main .announcement h1, div#region-main .announcement h2, div#region-main .announcement h3,
+div#region-main .announcement h4, div#region-main .announcement h5 {
     font-family: Shadows Into Light Two, sans-serif;	
     line-height: 50px;
     /*vertical-align: baseline;*/
@@ -66,14 +66,14 @@ div#region-main #Announcements h4, div#region-main #Announcements h5 {
 	margin-top:8px;
 	margin-bottom:-8px;
 }
-div#region-main #Announcements h1 {
+div#region-main .announcement h1 {
 	font-size: 24pt;
 }
-div#region-main #Announcements h1:first-child {
+/*div#region-main #Announcements h1:first-child {
 	margin-top:-52px;
 	margin-bottom: 0px;
 	color: maroon;
-}
+}*/
 /* Creates a page punch hole  div#region-main #Announcements p:after {    
     content: '';
     display: block;
@@ -102,7 +102,7 @@ div#region-main #Announcements h1:first-child {
         2px 130.1em 5px rgba(255,255,255,1), 0px 130em rgba(125,125,125,.25);
 }*/
 
-#Announcements p:focus {
+.announcement p:focus {
     outline: none;
 }
 
@@ -125,7 +125,7 @@ div #region-main #HeaderLeft {
 }
 
 div #region-main #HeaderStretch {
-	background-repeat: repeat;
+	background-repeat: no-repeat;
 	background-position: right top;
 	background-image: url([[pix:theme|MarbleHeader]]);
 	height: 85px;
