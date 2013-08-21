@@ -127,7 +127,7 @@ div #region-main h1 {
 	
 	
 }
-div #region-main #Announcements {
+div #region-main .announcement {
 	background-color: #B5EDFB;
 }
 div #region-main h1 a.autolink {

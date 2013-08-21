@@ -162,6 +162,7 @@ div #region-main li.activity.announcement.modtype_announcement h1 {
 div #region-main li.activity.announcement.modtype_announcement p.AnnouncementHead {
 	font-size: x-large;
 	font-weight: bold;
+	margin-top:0px;
 }
 span#completionprogressid {
 	display: none;
