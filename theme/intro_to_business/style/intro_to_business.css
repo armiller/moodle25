@@ -90,13 +90,12 @@ div #region-main .announcement {
 	margin-top: 60px;
 }
 
-div #region-main #Announcements h1, div #region-main .announcement h1 {
+div #region-main li.activity.announcement.modtype_announcement h1 {
 	border:none;
 	background-image: none;
 	border:none; !important
 	padding-left:0px; !important
 	margin-top: .75em;
-	background-color: #F0F;
 	
 }
 div #region-main .announcement .AnnouncementHead {
