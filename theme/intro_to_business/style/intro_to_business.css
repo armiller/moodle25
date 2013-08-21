@@ -21,10 +21,10 @@ div #region-main #HeaderLeft {
 	padding: 0px;
 	height: 119px;
 	width: 356px;
-	position: relative;
+	position: absolute;
 	left: 0px;
 	z-index: 10;
-	top: -94px;
+	top: 0;
 	visibility: visible;
 	float: left;
 }
@@ -87,10 +87,8 @@ div #region-main h1 {
 	padding-left: 20px;
 }
 div #region-main .announcement {
-	margin-top: 60px;
 	background-color: #D3D9E7;
 	color: #000;
-	vertical-align: middle;
 	border: 1px solid #2C5882;
 	-moz-border-radius-topleft: 5px;
 	-moz-border-radius-bottomleft: 5px;
