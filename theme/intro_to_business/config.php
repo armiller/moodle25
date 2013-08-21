@@ -7,7 +7,7 @@
 
 $THEME->name = 'intro_to_business';
 
-$THEME->sheets = array('base', 'general', 'browser', 'ImportedFromMoodle1_9', 'p7TMM01', 'SpryTabbedPanels', 'SpryCollapsiblePanel', 'intro_to_business');
+$THEME->sheets = array('base', 'skonline', 'browser', 'ImportedFromMoodle1_9', 'CoursesSitewide', 'intro_to_business');
 /// This variable is an array containing the names of all the
 /// stylesheet files you want included in this theme, and in what order
 ////////////////////////////////////////////////////////////////////////////////
