@@ -76,7 +76,7 @@ div #region-main h1 {
 	
 	
 }
-div #region-main #Announcements {
+div #region-main .announcement {
 	background-color: transparent;
 }
 div #region-main h1 a.autolink {

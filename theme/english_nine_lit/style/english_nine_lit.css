@@ -82,6 +82,7 @@ div #region-main #RequiredReading, div #region-main #Highlight, div.Highlight, d
 }
 #RequiredReading p, #RequiredReading a, #Highlight p, #Highlight a, div #region-main .announcement p, div #region-main .announcement a {
 	color:#FFF;
+	margin-bottom:1em;
 }
 #page-mod-page-view #region-main div.generalbox h1 {
 	color: #E4E9EF;
