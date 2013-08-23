@@ -12,3 +12,4 @@
     $page->requires->jquery_plugin('expander', 'theme_skonline');
 	$page->requires->jquery_plugin('expander_custom', 'theme_skonline');
  }
+ ?>
