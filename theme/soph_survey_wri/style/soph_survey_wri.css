@@ -35,13 +35,11 @@ div#region-main .announcement p, div#region-main .announcement li {
 	display: block;
 	font-size: 14pt;
 	font-family: Shadows Into Light Two, sans-serif;
-	line-height: 25px;
+	/*line-height: 25px;
 	letter-spacing: 2px;
-	vertical-align: text-bottom;
+	vertical-align: text-bottom;*/
 }
-div#region-main .announcement p + p {
-	margin-top: 25px;
-}
+
 div#region-main .announcement ul, div#region-main .announcement ol {
 	margin-top:25px;
 	margin-bottom: 25px;
@@ -64,7 +62,7 @@ div#region-main .announcement h4, div#region-main .announcement h5 {
 	vertical-align: text-bottom;
 	margin:0;
 	margin-top:8px;
-	margin-bottom:-8px;
+	margin-bottom:0px;
 }
 div#region-main .announcement h1 {
 	font-size: 24pt;
@@ -120,9 +118,8 @@ div #region-main #HeaderLeft {
 	background-image: url([[pix:theme|MarbleHeaderLeft]]);
 	background-repeat: no-repeat;
 	background-position: left top;
-	width: auto;
+	width: 900px;
 	height: 86px;
-	background-image: none;
 	
 }
 
