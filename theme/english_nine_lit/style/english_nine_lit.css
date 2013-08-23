@@ -52,7 +52,7 @@ div #region-main #Intro, #page-mod-page-view #region-main div.generalbox {
 	background-color: #E4E9EF;
 }
 
-div #region-main #RequiredReading, div #region-main #Highlight, div.Highlight, .announcement {
+div #region-main #RequiredReading, div #region-main #Highlight, div.Highlight, div #region-main .announcement {
 	background-image: none;
 	background-color: #304E75;
 	color: #FFF;
@@ -74,13 +74,13 @@ div #region-main #RequiredReading, div #region-main #Highlight, div.Highlight, .
 	border-bottom-right-radius: 0px;
 	border: 1px solid #000;
 }
-#RequiredReading h1, #RequiredReading h2, #RequiredReading h3, #RequiredReading h4, .announcement h1, .announcement h2, .announcement h3, .announcement h4 {
+#RequiredReading h1, #RequiredReading h2, #RequiredReading h3, #RequiredReading h4, div #region-main .announcement h1, div #region-main .announcement h2, div #region-main .announcement h3, div #region-main .announcement h4 {
 	background-color: transparent;
 	color: #E39164;
 	padding: 0px;
 	margin-bottom: .25em;
 }
-#RequiredReading p, #RequiredReading a, #Highlight p, #Highlight a, .announcement p, .announcement a {
+#RequiredReading p, #RequiredReading a, #Highlight p, #Highlight a, div #region-main .announcement p, div #region-main .announcement a {
 	color:#FFF;
 }
 #page-mod-page-view #region-main div.generalbox h1 {
