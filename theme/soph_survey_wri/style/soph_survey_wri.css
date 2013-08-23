@@ -117,10 +117,11 @@ div #region-main #HeaderLeft {
 	background-image: url([[pix:theme|MarbleHeaderLeft]]);
 	background-repeat: no-repeat;
 	background-position: left top;
-	width: 900px;
-	max-width: 99%;
+	min-width:408px;
+	max-width: 900px;
 	height: 86px;
-	vertical-align: middle;	
+
+	margin-top:15px;
 	
 }
 
