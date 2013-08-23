@@ -111,6 +111,7 @@ div #region-main #Header {
 	border-right-style: outset;
 	border-right-color: #666;
 	min-width:408px;
+	width:99%;
 	overflow:hidden;	
 }
 div #region-main #HeaderLeft {
@@ -121,7 +122,7 @@ div #region-main #HeaderLeft {
 	max-width: 900px;
 	height: 86px;
 
-	margin-top:15px;
+	padding-top:15px;
 	
 }
 
