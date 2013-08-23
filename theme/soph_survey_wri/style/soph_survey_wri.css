@@ -5,27 +5,26 @@
    
 
 
-div #region-main .announcements {
+div #region-main .announcement {
 	/*For IE*/
-	background-color: #FEF6AD;
-	margin-top: 0;
-	margin-bottom: 5px;
+	background-color: #C9E4ED;
+	/*margin-top: 0;
+	margin-bottom: 5px;*/
 	
 	
 	/*For Everyone else*/
-	background-image: -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
+	/*background-image: -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
 	background-image: -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
 	background-image: -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
 	background-image: -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
 	background-image: linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, #FEF6AD 0px, #FEF6AD 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(#FEF6AD 0px, #FEF6AD 18px, #A6FFED 19px, #FEF6AD 20px);
 	background-size: 1px, 1px, auto, auto 25px;
 	background-repeat: repeat-y, repeat-y, no-repeat, repeat;
-	background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;
+	background-position: 90% 0px, 10% 0px, 0px 0px, 0px 0px;*/
 	font-family: Shadows Into Light Two, sans-serif;  
 	
 	padding-top: 100px;
-    padding-left: 10.5%;
-    padding-right: 10.5%;
+   
 	
 }
 
@@ -40,7 +39,7 @@ div#region-main .announcement p, div#region-main .announcement li {
 	vertical-align: text-bottom;*/
 }
 
-div#region-main .announcement ul, div#region-main .announcement ol {
+/*div#region-main .announcement ul, div#region-main .announcement ol {
 	margin-top:25px;
 	margin-bottom: 25px;
 }
@@ -59,7 +58,7 @@ div#region-main .announcement h4, div#region-main .announcement h5 {
     font-family: Shadows Into Light Two, sans-serif;	
     line-height: 50px;
     /*vertical-align: baseline;*/
-	vertical-align: text-bottom;
+	/*vertical-align: text-bottom;
 	margin:0;
 	margin-top:8px;
 	margin-bottom:0px;
