@@ -47,7 +47,7 @@ div #region-main h1 {
 	padding-left: 65px;
 	line-height: 40px;
 }
-#page-course-view-topics #region-main #Announcements h1 {
+#page-course-view-topics #region-main .announcement h1 {
 	background-image: none;
 	padding-left: 0px;
 	line-height: inherit;
