@@ -105,20 +105,23 @@ div#region-main .announcement h1 {
 
 div #region-main #Header {
 	height: 86px;
-	/*border-radius: 6px;
-	-webkit-top-left-border-radius: 6px;
-	-webkit-bottom-right-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-khtml-border-radius: 6px;
-	
-	overflow: hidden;*/
+	border-bottom-width: 3px;
+	border-bottom-style: outset;
+	border-bottom-color: #666;
+	border-right-width: 3px;
+	border-right-style: outset;
+	border-right-color: #666;
+	min-width:408px;
+	overflow:hidden;	
 }
 div #region-main #HeaderLeft {
 	background-image: url([[pix:theme|MarbleHeaderLeft]]);
 	background-repeat: no-repeat;
 	background-position: left top;
 	width: 900px;
+	max-width: 99%;
 	height: 86px;
+	vertical-align: middle;	
 	
 }
 
