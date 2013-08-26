@@ -380,7 +380,7 @@ div #region-main .course-content ul.ctopics li.section .content .toggle a {
 }
 /*div #region-main .course-content ul.ctopics li:nth-of-type(2) h3.sectionname*/ 
 /*For Unit heads in collapsible topics*/
-div #region-main .course-content ul.ctopics li.section:nth-of-type(2) .content .toggle a, div #region-main .course-content ul.ctopics li.section:nth-of-type(5) .content .toggle a, div #region-main .course-content ul.ctopics li.section:nth-of-type(9) .content .toggle a {
+div #region-main .course-content ul.ctopics li.section:nth-of-type(2) .content .toggle a, div #region-main .course-content ul.ctopics li.section:nth-of-type(5) .content .toggle a, div #region-main .course-content ul.ctopics li.section:nth-of-type(9) .content .toggle a, div #region-main .course-content ul.ctopics li.section:nth-of-type(13) .content .toggle a {
 	color: #F7EFFA;
 	font-family: Gochi Hand, "Times New Roman", Times, serif;
 	/*font-weight: bold;*/
