@@ -20,7 +20,7 @@ $(document).ready(function() {
  
  //Select the <h1>s greater than (gt) the first one (numbered 0) plus everything that follows until the next <h1>
   
-   $('.announcement h1:gt(0)~p').expander({
+   $('.announcement h1:gt(0)~*').expander({
     slicePoint:       80,  // default is 100
 
     expandPrefix: '...',
