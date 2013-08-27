@@ -38,5 +38,5 @@
 
 $plugins = array(
     'expander' => array('files' => array('jquery_expander_1.0.js')),
-    'expander_custom' => array('files' => array('jquery_expander_custom_1.5.js'))
+    'expander_custom' => array('files' => array('jquery_expander_custom_1.6.js'))
 );
