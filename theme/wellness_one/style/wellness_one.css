@@ -455,3 +455,18 @@ div #region-main #sectionhead-1 td.cps_centre, div #region-main #sectionhead-2 t
 div#pageintro {
 	border:none;
 }
+table#ChainofInfection {
+	border: 2px ridge #000;
+}
+table#ChainofInfection tr.AlignTop {
+	vertical-align: top;
+}
+table#ChainofInfection tr.AlignTop td {
+	padding-top: 15px;
+}
+table#ChainofInfection .arrow {
+	font-size: 60px;
+	font-weight: 600;
+	color: #000000;
+	text-align: center;
+}
