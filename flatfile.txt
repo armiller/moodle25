@@ -1,0 +1,2 @@
+operation, role, user idnumber, course idnumber
+del, student, testudentafath101497,MA201417075
