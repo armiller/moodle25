@@ -134,7 +134,7 @@ $THEME->layouts = array(
     ),
 );
 
-$THEME->rendererfactory = 'theme_overridden_renderer_factory';
+//$THEME->rendererfactory = 'theme_overridden_renderer_factory';
 $THEME->enable_dock = true;
 $THEME->editor_sheets = array('editor');
 $THEME->javascripts = array('skonline', 'jquery-1.10.1.min','jquery_expander_1.0','jquery_expander_custom_1.0');
