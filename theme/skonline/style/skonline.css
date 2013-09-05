@@ -5,7 +5,9 @@ body, div, p, li, input, option, textarea, h1, h2, h3, h4, h5 {
 	margin-bottom:.25em;
 	
 }
-
+p {
+	margin-bottom:.5em;
+}
 option {
 	width: 130px;
 	font-size: 8pt;	
