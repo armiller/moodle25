@@ -87,9 +87,10 @@ div #region-main #HeaderRight {
 
 /*STYLES FOR #REGION-MAIN AJAX INCLUDES*/
 /*Prevents blocks from showing in main region via AJAX include*/
+/*Why would I want to do that? I'm commenting this out because My Courses doesn't appear in main-content when editing is turned on
 div #region-main .block-region, div #region-main #page-header, div #region-main #page-footer {
 	display:none;
-}
+}*/
 div #region-main #region-main {
 	margin-right: 0px;
 	margin-left: 200px;
