@@ -107,11 +107,11 @@ $THEME->layouts = array(
         'regions' => array(),
         'options' => array('nofooter', 'noblocks'=>true),
     ),
-    // Embeded pages, like iframe embeded in moodleform
+    // Embeded pages, like iframe embeded in moodleform. Copied nocourseheaderfooter from anomaly 9/9/13
     'embedded' => array(
         'file' => 'general.php',
         'regions' => array(),
-        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'noblocks'=>true),
+        'options' => array('nofooter'=>true, 'nonavbar'=>true, 'noblocks'=>true, 'nocourseheaderfooter'=>true),
     ),
     // Used during upgrade and install, and for the 'This site is undergoing maintenance' message.
     // This must not have any blocks, and it is good idea if it does not have links to
