@@ -263,6 +263,10 @@ div #region-main div #region-main .book_content {
 #gauge .yui-content {
 	margin-top:-18px;
 }
-#page-mod-page-view #page-header, #page-mod-page-view #page-footer {
+<!--Prevents header and footer from showing on "gauge" pages-->
+#page-mod-page-view .headermain, #page-mod-page-view .headermenu #page-mod-page-view #page-footer {
 	display:none;
+}
+#page-mod-page-view #page-header {
+	background-image:none;
 }
