@@ -263,3 +263,6 @@ div #region-main div #region-main .book_content {
 #gauge .yui-content {
 	margin-top:-18px;
 }
+#page-mod-page-view #page-header, #page-mod-page-view #page-footer {
+	display:none;
+}
