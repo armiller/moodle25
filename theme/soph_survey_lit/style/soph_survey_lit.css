@@ -260,10 +260,6 @@ div #region-main div #region-main .book_content {
 #gauge p, #gauge li {
 	font-weight:normal;
 }
-#gauge div#region-main {
-	
-	
-}
-#gauge div#region-main h2#pageheading{
-	display:none;
+#gauge .yui-content {
+	margin-top:-18px;
 }
